@@ -5,11 +5,24 @@
 
 body {
   font-size: 16px;
-  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
   background: #eee;
+  max-width: 900px;
+  margin: auto;
+}
+
+nav {
+  padding: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
