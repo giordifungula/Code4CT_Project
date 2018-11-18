@@ -1,9 +1,10 @@
 * {
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   color: black;
 }
@@ -22,12 +23,27 @@ a {
 .container {
   background: #eee;
   max-width: 1200px;
+  width: 100%;
   margin: auto;
 }
 
-nav {
+header {
   padding: 20px;
+}
+header nav {
   text-align: center;
+  display: inline;
+}
+header .search-menu {
+  float: right;
+}
+header:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+.top {
+  width: 800px;
 }
 
 /*# sourceMappingURL=styles.css.map */
