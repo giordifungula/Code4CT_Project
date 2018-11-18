@@ -37,10 +37,10 @@ header{
     padding: 20px;
     nav {
         // padding: 20px;
-        text-align: center;
+        text-align: right;
         display: inline;
         // centers the nav inside this section
-        // float: left;
+        float: left;
     }
 
     .search-menu {
@@ -53,11 +53,25 @@ header{
     }
     input {
         // margin-left: -10px;
-        // display: inline;
+        display: inline;
         // displays inline
     }
 }
 
 .top {
-    width: 800px;
+    width: 600px;
+    padding:20px;   
+}
+// landing page section
+.landing-pg {
+    background: #000;
+    height: 100vh;
+
+    .landing-content {
+        color: #fff;
+        text-align: center;
+        top: 50%;
+        font-size: 3em;
+        position: relative;
+    }
 }
