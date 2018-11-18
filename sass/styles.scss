@@ -7,8 +7,7 @@
 // base styles
 body {
     font-size: 16px;
-    // padding: 10px;
-    // background: rgb(19, 6, 6);   
+     color: black;
 }
 img {
     width: 100%;
@@ -17,13 +16,16 @@ img {
 
 a {
     text-decoration: none;
+    font-size: 1.0em;
+    color: black;
+    padding: 0.2em;
     // remove default styles
 }
 
 // Top section
 .container {
     background: #eee;
-    max-width: 900px;
+    max-width: 1200px;
     // max-width when the screen is streched
     margin: auto;
     // centers the container
@@ -31,4 +33,6 @@ a {
 
 nav {
     padding: 20px;
+    text-align: center;
+    // centers the nav inside this section
 }

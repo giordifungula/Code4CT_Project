@@ -5,6 +5,7 @@
 
 body {
   font-size: 16px;
+  color: black;
 }
 
 img {
@@ -13,16 +14,20 @@ img {
 
 a {
   text-decoration: none;
+  font-size: 1em;
+  color: black;
+  padding: 0.2em;
 }
 
 .container {
   background: #eee;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
 }
 
 nav {
   padding: 20px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
