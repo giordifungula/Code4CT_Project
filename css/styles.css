@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 body {
   padding: 0;
@@ -18,25 +19,27 @@ a {
 
 .container {
   background: #eee;
-  max-width: 1200px;
-  width: 100%; }
+  width: 100%;
+  margin: 10px; }
 
-header nav {
-  text-align: right;
-  display: inline;
-  float: left; }
-header .search-menu {
-  float: right; }
-header:after {
-  clear: both;
-  display: block;
-  content: ''; }
-header input {
-  display: inline; }
+header {
+  padding: 20px; }
+  header nav {
+    text-align: right;
+    display: inline;
+    float: left; }
+  header .search-menu {
+    float: right; }
+  header:after {
+    clear: both;
+    display: block;
+    content: ''; }
+  header input {
+    display: inline; }
 
 .top {
-  width: 600px;
-  padding: 20px; }
+  width: 500px;
+  margin: 0 auto; }
 
 .landing-pg {
   background: #000;
