@@ -30,11 +30,11 @@ a {
     max-width: 1200px;
     width: 100%;
     // max-width when the screen is streched
-    margin: auto;
+    // margin: auto;
     // centers the container
 }
 header{
-    padding: 20px;
+    // padding: 20px;
     nav {
         // padding: 20px;
         text-align: right;
@@ -50,6 +50,7 @@ header{
         clear: both;
         display: block;
         content: '';
+        // after the header content clear floats
     }
     input {
         // margin-left: -10px;
