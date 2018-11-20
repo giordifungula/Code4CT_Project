@@ -68,7 +68,10 @@ header{
 // landing page section
 .landing-pg {
     background: url('/images/Code4CT-homepage.jpg');
-    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
 
     .landing-content {
         color: #fff;
