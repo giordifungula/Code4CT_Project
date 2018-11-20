@@ -42,8 +42,8 @@ header {
   margin: 0 auto; }
 
 .landing-pg {
-  background: #000;
-  height: 100vh; }
+  background: url("/images/Code4CT-homepage.jpg");
+  height: 80vh; }
   .landing-pg .landing-content {
     color: #fff;
     text-align: center;
