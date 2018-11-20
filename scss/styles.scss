@@ -61,7 +61,7 @@ header{
 
 .top {
     width: 500px;
-    // sets a centered fixed width 
+    // sets a centered fixed width for top content
     margin: 0 auto;
        
 }
@@ -76,8 +76,15 @@ header{
     .landing-content {
         color: #fff;
         text-align: center;
-        top: 50%;
-        font-size: 3em;
+        top: 30%;
         position: relative;
+        padding: 2em;
+        max-width: 900px;
+        margin: 0 auto;
+        background: rgba(24, 22, 22, 0.418);
+
+        h1 {
+            font-size: 3em;
+        }
     }
 }

@@ -50,8 +50,13 @@ header {
   .landing-pg .landing-content {
     color: #fff;
     text-align: center;
-    top: 50%;
-    font-size: 3em;
-    position: relative; }
+    top: 30%;
+    position: relative;
+    padding: 2em;
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(24, 22, 22, 0.418); }
+    .landing-pg .landing-content h1 {
+      font-size: 3em; }
 
 /*# sourceMappingURL=styles.css.map */
