@@ -13,9 +13,10 @@ img {
 
 a {
   text-decoration: none;
-  font-size: 1.0em;
+  font-size: 1.1em;
   color: black;
-  padding: 0.2em; }
+  padding: 2px;
+  overflow-y: hidden; }
 
 .container {
   background: #eee;
@@ -23,7 +24,8 @@ a {
   margin: 10px; }
 
 header {
-  padding: 20px; }
+  padding: 20px;
+  overflow: hidden; }
   header nav {
     text-align: right;
     display: inline;
