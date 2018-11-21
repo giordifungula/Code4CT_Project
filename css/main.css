@@ -36,11 +36,13 @@ body {
     float: right; }
 
 .top {
-  width: 500px;
+  width: 600px;
   margin: 0 auto; }
   .top a {
     padding: 1.1px;
-    transition: 0.2s; }
+    transition: 0.2s;
+    font-size: 17px;
+    text-transform: uppercase; }
     .top a:hover {
       color: #e1918a; }
 

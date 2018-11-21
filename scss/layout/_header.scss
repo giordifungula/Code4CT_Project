@@ -23,13 +23,15 @@
 
 // Top
 .top {
-    width: 500px;
+    width: 600px;
     // sets a centered fixed width for top content
     margin: $center-content;
 
     a {
         padding: 1.1px;
         transition: 0.2s;
+        font-size: 17px;
+        text-transform: uppercase;
         // overflow-y: hidden;
         // remove default styles
         &:hover {
