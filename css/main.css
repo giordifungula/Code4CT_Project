@@ -9,10 +9,15 @@ body {
 .container {
   background: #eee;
   width: 100%;
-  margin: 10px; }
+  margin: 0 10px; }
 
 img {
   width: 100%; }
+
+a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: black; }
 
 body {
   font-size: 16px;
@@ -29,12 +34,15 @@ body {
     float: left; }
   .header .search-menu {
     float: right; }
-  .header input {
-    display: inline; }
 
 .top {
   width: 500px;
   margin: 0 auto; }
+  .top a {
+    padding: 1.1px;
+    transition: 0.2s; }
+    .top a:hover {
+      color: #e1918a; }
 
 .landing-pg {
   background: url("/images/Code4CT-homepage.jpg");

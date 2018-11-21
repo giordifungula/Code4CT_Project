@@ -16,7 +16,7 @@
 
     input {
         // margin-left: -10px;
-        display: inline;
+        // display: inline;
         // displays inline
     }
 }
@@ -25,7 +25,17 @@
 .top {
     width: 500px;
     // sets a centered fixed width for top content
-    margin: 0 auto;
+    margin: $center-content;
+
+    a {
+        padding: 1.1px;
+        transition: 0.2s;
+        // overflow-y: hidden;
+        // remove default styles
+        &:hover {
+            color: $light-red;
+        }
+    }
        
 }
 
@@ -44,7 +54,7 @@
         position: relative;
         padding: 2em;
         max-width: 900px;
-        margin: 0 auto;
+        margin: $center-content;
         background: rgba(24, 22, 22, 0.418);
 
         h1 {

@@ -4,7 +4,6 @@
 * {
     box-sizing: border-box;
     overflow-x: hidden;
-    
 }
 
 body {
@@ -16,7 +15,7 @@ body {
     background: #eee;
     width: 100%;
     // max-width when the screen is streched
-    margin: 10px;
+    margin: 0 10px;
     // centers the container
 }
 img {
@@ -24,10 +23,8 @@ img {
     // fits images completely inside the div
 }
 a {
-    // text-decoration: none;
-    // font-size: 1.1em;
-    // color: black;
-    // padding: 2px;
-    // overflow-y: hidden;
-    // remove default styles
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+    
 }
