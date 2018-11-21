@@ -23,7 +23,7 @@
 
 // Top
 .top {
-    width: 600px;
+    width: 650px;
     // sets a centered fixed width for top content
     margin: $center-content;
 
@@ -37,6 +37,9 @@
         &:hover {
             color: $light-red;
         }
+    }
+    .current {
+        color: $light-red;
     }
        
 }
