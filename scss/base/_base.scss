@@ -12,11 +12,10 @@ body {
 }
 // Top section
 .container {
-    background: #eee;
+    // background: #eee;
     width: 100%;
     // max-width when the screen is streched
-    margin: 0 10px;
-    // centers the container
+    // padding: 20px;
 }
 img {
     width: 100%;
@@ -26,5 +25,12 @@ a {
     text-decoration: none;
     font-size: 1.1em;
     color: black;
+}
+
+// Tablet and Desktop view
+.container {
+    padding: 20px;
+    // creates some white space on tablet view
     
 }
+

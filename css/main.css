@@ -7,9 +7,7 @@ body {
   margin: 0; }
 
 .container {
-  background: #eee;
-  width: 100%;
-  margin: 0 10px; }
+  width: 100%; }
 
 img {
   width: 100%; }
@@ -18,6 +16,9 @@ a {
   text-decoration: none;
   font-size: 1.1em;
   color: black; }
+
+.container {
+  padding: 20px; }
 
 body {
   font-size: 16px;
@@ -49,7 +50,7 @@ body {
     color: #e1918a; }
 
 .landing-pg {
-  background: url("/images/Code4CT-homepage.jpg");
+  background-color: aqua;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,11 +60,19 @@ body {
     text-align: center;
     top: 30%;
     position: relative;
-    padding: 2em;
     max-width: 900px;
     margin: 0 auto;
     background: rgba(24, 22, 22, 0.418); }
     .landing-pg .landing-content h1 {
       font-size: 3em; }
+
+@media (max-width: 600px) {
+  .top {
+    display: none;
+    margin: 0; }
+
+  .container {
+    padding: 0;
+    margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */
