@@ -1,3 +1,57 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
+body {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  background: #eee;
+  width: 100%;
+  margin: 10px; }
+
+img {
+  width: 100%; }
+
+body {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  line-height: 1.2; }
+
+.header {
+  padding: 20px;
+  overflow: hidden; }
+  .header nav {
+    text-align: right;
+    display: inline;
+    float: left; }
+  .header .search-menu {
+    float: right; }
+  .header input {
+    display: inline; }
+
+.top {
+  width: 500px;
+  margin: 0 auto; }
+
+.landing-pg {
+  background: url("/images/Code4CT-homepage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh; }
+  .landing-pg .landing-content {
+    color: #fff;
+    text-align: center;
+    top: 30%;
+    position: relative;
+    padding: 2em;
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(24, 22, 22, 0.418); }
+    .landing-pg .landing-content h1 {
+      font-size: 3em; }
 
 /*# sourceMappingURL=main.css.map */
