@@ -17,9 +17,26 @@ a {
   font-size: 1.1em;
   color: black; }
 
-.container {
-  padding: 20px; }
+@media (min-width: 650px) {
+  .container {
+    padding: 20px; }
 
+  #menu-bar {
+    display: none; }
+
+  #logo {
+    display: none; }
+
+  .top {
+    width: 650px; }
+
+  nav {
+    text-align: right;
+    display: inline;
+    float: left; }
+
+  .search-menu {
+    float: right; } }
 body {
   font-size: 16px;
   color: black;
@@ -29,15 +46,8 @@ body {
 .header {
   padding: 20px;
   overflow: hidden; }
-  .header nav {
-    text-align: right;
-    display: inline;
-    float: left; }
-  .header .search-menu {
-    float: right; }
 
 .top {
-  width: 650px;
   margin: 0 auto; }
   .top a {
     padding: 1.1px;
@@ -50,7 +60,7 @@ body {
     color: #e1918a; }
 
 .landing-pg {
-  background-color: aqua;
+  background: url("/images/Code4CT-homepage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,18 +68,30 @@ body {
   .landing-pg .landing-content {
     color: #fff;
     text-align: center;
-    top: 30%;
+    top: 10rem;
     position: relative;
     max-width: 900px;
-    margin: 0 auto;
-    background: rgba(24, 22, 22, 0.418); }
+    margin: 0 auto; }
     .landing-pg .landing-content h1 {
       font-size: 3em; }
 
-@media (max-width: 600px) {
-  .top {
+@media (max-width: 649px) {
+  .top nav {
     display: none;
     margin: 0; }
+  .top #menu-bar {
+    float: right;
+    position: relative;
+    top: 20px; }
+  .top #logo {
+    float: left;
+    width: 50%; }
+  .top:after {
+    clear: both;
+    display: block;
+    content: ''; }
+  .top input {
+    display: none; }
 
   .container {
     padding: 0;
