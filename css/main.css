@@ -75,26 +75,40 @@ body {
     .landing-pg .landing-content h1 {
       font-size: 3em; }
 
+#mobile-nav {
+  display: none; }
+
 @media (max-width: 649px) {
-  .top nav {
-    display: none;
-    margin: 0; }
-  .top #menu-bar {
-    float: right;
-    position: relative;
-    top: 20px; }
-  .top #logo {
-    float: left;
-    width: 50%; }
-  .top:after {
-    clear: both;
-    display: block;
-    content: ''; }
-  .top input {
+  input {
     display: none; }
+
+  .top {
+    overflow: hidden; }
+    .top #nav {
+      display: none; }
+    .top #menu-bar {
+      float: right;
+      position: relative;
+      top: 5px; }
+    .top #logo {
+      float: left;
+      width: 50%; }
+    .top:after {
+      clear: both;
+      display: block;
+      content: ''; }
 
   .container {
     padding: 0;
-    margin: 0; } }
+    margin: 0; }
+
+  #mobile-nav {
+    display: none;
+    text-align: center; }
+    #mobile-nav a {
+      display: block;
+      transition: 0.5s; }
+      #mobile-nav a:hover {
+        color: #e1918a; } }
 
 /*# sourceMappingURL=main.css.map */

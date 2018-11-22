@@ -16,7 +16,7 @@
                 <section id="logo">
                     <span id="logo"><img src="images/code4ct-logo-1.jpg" alt=""></span>                                    
                 </section>
-                <nav>
+                <nav id="nav">
                     <!-- navigation goes here and is centerd -->
                     <a href="" class="current">Home</a>
                     <a href="">Courses</a>
@@ -28,6 +28,13 @@
                     <input type="text" placeholder="Search.." name="search">
                 </div>
             </section>
+            <nav id="mobile-nav">
+                    <a href="" class="current">Home</a>
+                    <a href="">Courses</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                    <a href="">Portfolio</a>
+            </nav>
         </header>
         <section class="landing-pg">
             <div class="landing-content">
@@ -41,5 +48,17 @@
         </section>
     </section>
     <script src="js/main.js"></script>
+    <script>
+    // 
+    var menuBar = document.getElementById('menu-bar');
+    menuBar.addEventListener('click', function(){
+    // var menu = document.getElementById('mobile-nav');
+    console.log(1);
+    
+    });
+function toggleMenu(){
+    // menu.className += 'display';
+}
+    </script>
 </body>
 </html>
