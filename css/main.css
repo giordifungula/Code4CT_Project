@@ -153,12 +153,22 @@ body {
       font-size: 2em; } }
 main {
   padding: 10px; }
-  main .about-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-  main .about-grid {
-    background: black;
-    grid-gap: 10px; }
+  main .about {
+    background: #3dfaaa;
+    padding: 10px;
+    display: flex; }
+    main .about .about-content {
+      width: 50%; }
+    main .about .about-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto;
+      grid-gap: 10px;
+      width: 50%; }
+    main .about .about-grid {
+      background: black;
+      grid-gap: 10px;
+      height: 200px; }
 
 @media (min-width: 760px) {
   main {
