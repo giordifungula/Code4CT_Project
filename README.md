@@ -4,7 +4,7 @@ I will be building a website for an NGO called Code4CT.
  - Code4CT is a NGO, that wants to update their to a responsive, modern and Interactive site.
 
 ### Live link
- - link to my live site : https://giordifungula.github.io/Code4CT_Project/.
+ - link to my live site : https://giordifungula.github.io/code4ct_project/
  
 ## Technologies used
  - HTML 
