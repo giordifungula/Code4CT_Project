@@ -12,7 +12,7 @@
         
 // Layout
  @import 'layout/footer',
-         'layout/grid',
-         'layout/header',
-         'layout/middle',
-         'layout/navigation';
+         'layout/grid';
+
+// Pages
+@import   'pages/home';
