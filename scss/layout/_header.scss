@@ -31,10 +31,13 @@
 // landing page section
 .landing-pg {
     background: url('/images/Code4CT-homepage.jpg');
+    // opacity: 0.9;
+    background-color: rgb(105, 105, 105);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 90vh;
+    background-blend-mode: multiply;
 
     .landing-content {
         color: #fff;
@@ -52,4 +55,19 @@
 #mobile-nav {
     display: none;
     // Removes Movile navigation on larger screens
+}
+
+@media(max-width: 650px){
+    .landing-pg {
+        
+
+        .landing-content {
+            padding: 1em;
+            top: 5rem;
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    }
 }
