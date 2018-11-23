@@ -1,0 +1,17 @@
+// Main section and below 
+main {
+    margin: 10px;
+    padding: 10px;
+    // display: none;
+    
+    // some spacing inside the 
+}
+
+
+// media queries
+@media(min-width:760px){
+    main {
+        margin: $center-content;
+        // background: rgb(207, 29, 29);
+    }
+}
