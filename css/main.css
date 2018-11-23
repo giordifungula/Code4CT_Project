@@ -43,12 +43,6 @@ a {
 
   #mobile-nav {
     display: none; } }
-body {
-  font-size: 16px;
-  color: black;
-  font-weight: 400;
-  line-height: 1.2; }
-
 .red-btn {
   background-color: #cc463c !important; }
 
@@ -70,6 +64,12 @@ body {
 
 .arrow {
   display: none; }
+
+body {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  line-height: 1.2; }
 
 .about-gallery {
   display: grid;

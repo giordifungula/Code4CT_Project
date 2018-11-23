@@ -1,15 +1,18 @@
-// importing styles
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+// abstract folder
+@import 'abstracts/functions',
+        'abstracts/mixins', 
+        'abstracts/variables';
 
-@import 'base/base';
-@import 'base/textTypography';
+// base files
+ @import 'base/base';
 
-@import 'components/buttons';
-
-@import 'layout/footer';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/middle';
-@import 'layout/navigation';
+//  components
+ @import 'components/buttons',
+         'components/typography';
+        
+// Layout
+ @import 'layout/footer',
+         'layout/grid',
+         'layout/header',
+         'layout/middle',
+         'layout/navigation';
