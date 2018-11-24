@@ -3,14 +3,16 @@
         display: none;
         // Hides the search box on mobile display
     }
+
     .top{
         overflow: hidden;
+
         #nav{
             // display: inline;
             // margin: 0;
             display: none;
             // will display on tablet and larger screen
-            
+
         }
 
         #menu-bar {
@@ -38,6 +40,8 @@
     #mobile-nav {
         display: none;
         text-align: center;
+        transition: 1s all;
+
         a {
             display: block;
             transition: 0.5s;
@@ -46,6 +50,7 @@
             color: $light-red;
                 
             }
+            
         }
     }
     

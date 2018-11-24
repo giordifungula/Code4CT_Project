@@ -1,0 +1,35 @@
+// first red button
+.red-btn {
+    background-color: $dark-red !important;
+    // dark red color for button
+}
+
+.btn{
+        display: inline-block;
+        color: #eee;
+        border-radius: 4px;
+        // round the edges of the border
+        padding: 1.5em 2em;
+        // some breating space
+        border: 2px solid grey;
+        width: 200px;
+        // gives button a width
+        margin: 10px;
+        // creats spacing around button
+        transition: 1s all;
+        background-color: rgba(0.2,0.5,0.6,0.6);
+        
+        &:hover {
+            // background: green;
+            transform: translateX(10px);
+            
+            .arrow {
+                display: inline;
+                transform: translateX(10px);            
+            }
+        }
+}
+.arrow {
+    display: none;
+    // arrow that displays when hovered
+}

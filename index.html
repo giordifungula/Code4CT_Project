@@ -12,7 +12,7 @@
         <header class="header">
             <section class="top">
                 <!-- contains the nav and search menu -->
-                <a href="" id="menu-bar" style=""><span>☰</span></a>
+                <a href="javascript:void(0)" id="menu-bar" style="" onclick="toggleNav()"><span>☰</span></a>
                 <section id="logo">
                     <span id="logo"><img src="images/code4ct-logo-1.jpg" alt=""></span>                                    
                 </section>
@@ -44,18 +44,84 @@
                    We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.
                 </p>
                 <!-- will have margin auto -->
+                <div class="buttons">
+                    <button class="btn red-btn">
+                        Start Coding
+                        <div class="arrow">
+                            >
+                        </div>
+                     </button>
+                    <button class="btn">
+                        Donate Now
+                        <div class="arrow">
+                            >
+                        </div>
+                    </button>                
+                </div>
             </div>
+            <!-- Landing page section completed -->
         </section>
+        <main>
+            <!-- contains the main about section -->
+            <section class="about">
+                <!-- will have a light grey background color around it -->
+                <div class="about-content">
+                    <div class="title">
+                        <h2>Who we are</h2>
+                        <span class=""><hr></span>
+                        <!-- line will go here -->
+                    </div>
+                    <p class="about-heading">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Deleniti dolorem blanditiis est aperiam rem ut reiciendis 
+                         explicabo, unde delectus temporibus!</p>
+                    <!-- heading will be darker -->
+                    <p class="about-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, error.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, error.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, error.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, error.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, error.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, error.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <button class="btn">Read more</button>
+                    <!-- button will be see through without the sliding  -->
+                </div>
+                <div class="about-gallery">
+                    <div class="about-grid">
+                        content
+                    </div>
+                    <div class="about-grid">
+                        content
+                    </div>
+                    <div class="about-grid">
+                        content
+                    </div>
+                    <div class="about-grid">
+                        content
+                    </div>
+                </div>
+            </section>
+    </main>
     </section>
+    
+
+
     <script src="js/main.js"></script>
     <script>
     // 
-    var menuBar = document.getElementById('menu-bar');
-    menuBar.addEventListener('click', function(){
-    // var menu = document.getElementById('mobile-nav');
-    console.log(1);
+    let menuBar = document.getElementById('menu-bar');
+    let menu = document.getElementById('mobile-nav');
+
+    var toggle = menu.style;
     
-    });
+    toggleNav = function(){
+        // toggle.transition = '1s';
+        toggle.display = 'block';
+    }
+    
+
 function toggleMenu(){
     // menu.className += 'display';
 }
