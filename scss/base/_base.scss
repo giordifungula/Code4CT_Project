@@ -29,6 +29,10 @@ a {
     font-size: 1.1em;
     color: black;
 }
+input {
+    padding: 1.5px;
+    // border-right: none;
+}
 
 // Tablet and Desktop view
 @media(min-width: 650px){
@@ -49,7 +53,7 @@ a {
     }
 
     .top {
-    width: 650px
+        width: 650px;
     }
 
     // Nav bar styles for Tablat and larger screens
@@ -63,12 +67,26 @@ a {
 
     .search-menu {
         float: right;
+        
+        button {
+            // padding: 0;
+            // margin: -4px;
+            color: $light-red;
+        }
     }
 
     #mobile-nav {
         display: none;
         // Removes Movile version navigation on larger screens
     }
+<<<<<<< HEAD
+
+    #mobile-nav {
+        display: none;
+        // Removes Movile version navigation on larger screens
+    }
+=======
+>>>>>>> b706a86e28f296a8fc2a24d1833978eed95904f3
     
 }
 
