@@ -47,9 +47,12 @@ input {
       color: #e1918a; }
 
   #mobile-nav {
+    display: none; }
+
+  #mobile-nav {
     display: none; } }
 .red-btn {
-  background-color: #cd463c !important; }
+  background-color: #cc463c !important; }
 
 .btn {
   display: inline-block;
