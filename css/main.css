@@ -23,10 +23,6 @@ a {
 input {
   padding: 1.5px; }
 
-h1, h2, h3, h4, h5, h6 {
-  padding: 0;
-  margin: 0; }
-
 .red-btn {
   background-color: #cc463c !important; }
 
@@ -199,5 +195,33 @@ main {
 @media (max-width: 600px) {
   .info {
     grid-template-columns: auto; } }
+@media (min-width: 650px) {
+  .container {
+    padding: 20px; }
+
+  #menu-bar {
+    display: none; }
+
+  #logo {
+    display: none; }
+
+  .top {
+    width: 650px; }
+
+  nav {
+    text-align: right;
+    display: inline;
+    float: left; }
+
+  .search-menu {
+    float: right; }
+    .search-menu button {
+      color: #e1918a; }
+
+  #mobile-nav {
+    display: none; }
+
+  #mobile-nav {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
