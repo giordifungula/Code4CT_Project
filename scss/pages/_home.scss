@@ -152,6 +152,20 @@ main {
     // some spacing around the main content for mobile view
     margin-top: 1.5em;
 }
+// About content default
+.title {
+    width: 10em;
+    // Top Title section will be constant over all sizes
+
+    hr {
+        // border: 1px solid $light-red;
+        border: 0;
+        height: 4px;
+        background: #1e5799;
+        background: linear-gradient(to right,  $light-red 30%,rgb(201, 200, 200) 50%);
+        // Line under the About us text
+    }
+}
 @media(max-width: 768px){
     // about Section 
     .about {
@@ -166,7 +180,7 @@ main {
 
         .about-content {
             grid-area: about_info;
-            background: #eee;
+            // background: #eee;
             // about content on mobile
         }
         .about-gallery {
