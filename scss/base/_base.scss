@@ -35,57 +35,9 @@ input {
     // border-right: none;
 }
 
-// Tablet and Desktop view
-@media(min-width: 650px){
-    
-    .container {
-        padding: 20px;
-        // creates some white space on tablet view
-    }
-
-    #menu-bar{
-        display: none;
-        // hide menu bar for larger screens
-    }
-
-    #logo {
-        display: none;
-        // hide logo for larger screens
-    }
-
-    .top {
-        width: 650px;
-    }
-
-    // Nav bar styles for Tablat and larger screens
-    nav {
-        // padding: 20px;
-        text-align: right;
-        display: inline;
-        // centers the nav inside this section
-        float: left;
-    }
-
-    .search-menu {
-        float: right;
-        
-        button {
-            // padding: 0;
-            // margin: -4px;
-            color: $light-red;
-        }
-    }
-
-    #mobile-nav {
-        display: none;
-        // Removes Movile version navigation on larger screens
-    }
-
-    #mobile-nav {
-        display: none;
-        // Removes Movile version navigation on larger screens
-    }
-    
+h1,h2,h3,h4,h5,h6 {
+    padding:0;
+    margin: 0;
+    // remove default spacing around text
 }
-
 
