@@ -15,5 +15,5 @@ $(document).ready(function(){
         console.log($('#mobile-nav').toggleClass('open'));
         // $('#mobile-nav').style.height = '100px';
     });
-    console.log('hey');
+    // console.log('hey');
 });
