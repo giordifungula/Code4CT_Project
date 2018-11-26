@@ -150,7 +150,7 @@
 main {
     padding: 10px;
     // some spacing around the main content for mobile view
-    margin-top: 1.5em;
+    margin-top: 2.0em;
 }
 // About content default
 .title {
@@ -166,6 +166,19 @@ main {
         // Line under the About us text
     }
 }
+
+// Info Default section under about section
+.info {
+    background:$dark-back;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: #fff;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+    
+}
+
 @media(max-width: 768px){
     // about Section 
     .about {
@@ -187,16 +200,21 @@ main {
             grid-area: about_gallery;
             display: grid;
             // on mobile display grid
-            grid-template-columns: auto;
+            grid-template-columns: auto auto;
+            // 2 columns on mobile 
             grid-gap: 10px;
 
             .about-grid {
                 background: rgb(22, 21, 21);
                 // display: block;
                 height: 200px;
+                width: 200px;
             }
         }
     }
+// Info Default section under about section
+    .info {
+    }    
 }
 
 
@@ -212,7 +230,7 @@ main {
     // Styling the about section]
        // About section inside the main
        .about {
-        padding: 10px;
+        padding: 50px;
         display: flex;
 
         .about-content {
@@ -241,8 +259,8 @@ main {
 @media(min-width:800px){
 
     main {
-        margin: $center-content;
-        padding: 0 100px;
+        // margin: $center-content;
+        // padding: 0 100px;
         // background: rgb(207, 29, 29);
     }
     
