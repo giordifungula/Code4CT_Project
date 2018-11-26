@@ -91,7 +91,10 @@ body {
     .header .top .current {
       color: #e1918a; }
   .header #mobile-nav {
-    display: none; }
+    display: block;
+    height: 0; }
+  .header .open {
+    height: auto !important; }
 
 .landing-pg {
   background: url("/images/Code4CT-homepage.jpg");
@@ -139,7 +142,8 @@ body {
 
   #mobile-nav {
     display: none;
-    text-align: center; }
+    text-align: center;
+    transition: 1s all; }
     #mobile-nav a {
       display: block;
       transition: 0.5s; }
@@ -153,26 +157,41 @@ body {
       font-size: 2em; } }
 main {
   padding: 10px; }
-  main .about {
-    background: #3dfaaa;
+
+@media (max-width: 600px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    grid-template-areas: "about_info" "about_info" "about_gallery" "about_gallery"; }
+    .about .about-content {
+      grid-area: about_info; }
+    .about .about-gallery {
+      grid-area: about_gallery;
+      grid-template-columns: auto; } }
+@media (min-width: 770px) {
+  main {
+    margin: 0 auto;
+    padding: 0 10px; }
+
+  .about {
     padding: 10px;
     display: flex; }
-    main .about .about-content {
-      width: 50%; }
-    main .about .about-gallery {
+    .about .about-content {
+      width: 62%;
+      margin: 10px; }
+    .about .about-gallery {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto auto;
       grid-gap: 10px;
       width: 50%; }
-    main .about .about-grid {
+    .about .about-grid {
       background: black;
-      grid-gap: 10px;
-      height: 200px; }
-
-@media (min-width: 760px) {
+      grid-gap: 10px; } }
+@media (min-width: 800px) {
   main {
     margin: 0 auto;
-    padding: 0; } }
+    padding: 0 100px; } }
 
 /*# sourceMappingURL=main.css.map */

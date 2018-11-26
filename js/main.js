@@ -9,3 +9,11 @@
 // function toggleMenu(){
 //     // menu.className += 'display';
 // }
+$(document).ready(function(){
+
+    $('#menu-bar').on('click', function(){
+        console.log($('#mobile-nav').toggleClass('open'));
+        // $('#mobile-nav').style.height = '100px';
+    });
+    console.log('hey');
+});
