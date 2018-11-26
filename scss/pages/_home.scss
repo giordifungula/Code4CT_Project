@@ -143,6 +143,10 @@
             }
         }
     }
+    // infoSection under the about section
+    .info {
+        
+    }
     
 }
 
@@ -169,7 +173,7 @@ main {
 
 // Info Default section under about section
 .info {
-    background:$dark-back;
+    background: $dark-back;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     color: #fff;
@@ -262,6 +266,16 @@ main {
         // margin: $center-content;
         // padding: 0 100px;
         // background: rgb(207, 29, 29);
+
+        // ### will have margin displayed in each section div
     }
     
+}
+
+// Mobile styles for the Middle and below
+@media(max-width:600px){
+    // mobile styles for About section and below
+    .info {
+        grid-template-columns: auto;
+    }
 }
