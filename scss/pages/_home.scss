@@ -191,6 +191,37 @@ main {
     }
 }
 
+// Courses Section under the Info Section
+.courses {
+    // Courses Normal Desktop Version first
+    .courses_grid { 
+        display: grid;
+        // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,1fr);
+        // added rows
+        grid-gap: 5px;
+        align-self: center;
+        align-content: center;
+        text-align: center;
+
+        .course_item {
+            width: 250px;
+            height: 250px;
+            background: $light-red;
+        }
+        // Merging courses item 3 to 2 other spaces
+        .course_item3 {
+            grid-column: 3/ -1;
+            grid-row: 1/-1;
+            // Takes the space of remaining columns and rows
+            width: 100%;
+            // displays full content
+            height: 100%;
+        }
+
+    }
+}
 @media(max-width: 768px){
     // about Section 
     .about {
