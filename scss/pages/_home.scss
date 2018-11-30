@@ -165,8 +165,8 @@ main {
         // border: 1px solid $light-red;
         border: 0;
         height: 4px;
-        background: #1e5799;
-        background: linear-gradient(to right,  $light-red 30%,rgb(201, 200, 200) 50%);
+        // background: #1e5799;
+        background: linear-gradient(to right,  $light-red 50%,rgb(201, 200, 200) 50%);
         // Line under the About us text
     }
 }

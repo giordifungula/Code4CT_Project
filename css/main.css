@@ -23,28 +23,6 @@ a {
 input {
   padding: 1.5px; }
 
-.red-btn {
-  background-color: #cc463c !important; }
-
-.btn {
-  display: inline-block;
-  color: #eee;
-  border-radius: 4px;
-  padding: 1.5em 2em;
-  border: 2px solid grey;
-  width: 200px;
-  margin: 10px;
-  transition: 1s all;
-  background-color: rgba(0, 1, 1, 0.6); }
-  .btn:hover {
-    transform: translateX(10px); }
-    .btn:hover .arrow {
-      display: inline;
-      transform: translateX(10px); }
-
-.arrow {
-  display: none; }
-
 body {
   font-size: 16px;
   color: black;
@@ -139,8 +117,7 @@ main {
   .title hr {
     border: 0;
     height: 4px;
-    background: #1e5799;
-    background: linear-gradient(to right, #e1918a 30%, #c9c8c8 50%); }
+    background: linear-gradient(to right, #e1918a 50%, #c9c8c8 50%); }
 
 .info {
   background: #000;
