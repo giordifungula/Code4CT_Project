@@ -1,18 +1,7 @@
-// abstract folder
-@import 'abstracts/functions',
-        'abstracts/mixins', 
-        'abstracts/variables';
-
-// base files
- @import 'base/base';
-
-//  components
- @import 'components/buttons',
-         'components/typography';
-        
-// Layout
- @import 'layout/footer',
-         'layout/grid';
-
-// Pages
-@import   'pages/home';
+@import 'partials/variables',
+        'partials/mixins',
+        'partials/functions',
+        'partials/base',
+        'partials/components',
+        'partials/layouts',
+        'partials/responsiveness';
