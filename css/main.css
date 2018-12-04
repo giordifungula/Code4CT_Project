@@ -31,7 +31,7 @@ body {
   line-height: 1.2; }
 
 .red-btn {
-  background-color: #cc463c !important; }
+  background-color: #ee534f !important; }
 
 .btn {
   display: inline-block;
@@ -99,7 +99,7 @@ main {
   .title hr {
     border: 0;
     height: 4px;
-    background: linear-gradient(to right, #e1918a 50%, #c9c8c8 50%); }
+    background: linear-gradient(to right, #ee534f 30%, #c9c8c8 50%); }
 
 .about {
   display: grid;
@@ -111,12 +111,13 @@ main {
   .about .about-gallery {
     grid-area: about_gallery;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-gap: 10px; }
     .about .about-gallery .about-grid {
       background: #161515;
       height: 200px;
-      width: 200px; }
+      width: 100%;
+      margin: 0 auto; }
 
 .info {
   background: #000;
@@ -128,13 +129,11 @@ main {
   text-align: center; }
   .info i {
     font-size: 3em;
-    color: #cc463c;
+    color: #ee534f;
     padding: 20px;
     margin: 0; }
 
 .courses .courses_grid {
-  display: flex;
-  flex-direction: column;
   align-self: center;
   align-content: center;
   text-align: center; }
@@ -227,7 +226,8 @@ main {
     grid-template-columns: auto; }
 
   .courses_grid {
-    grid-template-columns: auto; } }
+    display: flex;
+    flex-direction: column; } }
 @media (min-width: 650px) {
   .container {
     padding: 20px; }
