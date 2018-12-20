@@ -173,8 +173,17 @@
     // Mobile styles for the Middle and below
     @media(max-width:600px){
         // mobile styles for About section and below
+        .about-gallery {
+
+            .about-grid {
+                height: 250px;
+                margin: 0 auto;
+                // centers and fits on mobile screen
+            }
+        }
         .info {
             grid-template-columns: auto;
+            padding: 0 3em;
         }
         // ========== Courses Section for Mobile ============= //
         
@@ -184,6 +193,7 @@
             //  flex the courses for mobile phone
             // grid-template-columns: auto;
         }
+        
     }
     
     // Tablet and Desktop view 
