@@ -80,7 +80,14 @@ main {
 .title {
     width: 15em;
     // Top Title section will be constant over all sizes
-
+   .red {
+    color: $light-red;
+    border: 3px solid;
+    width: 50%;
+    top: 12px;
+    left: -6em;
+    position: relative;
+   }
     .line {
         border: 1px solid $light-red;
         // border: 0;
