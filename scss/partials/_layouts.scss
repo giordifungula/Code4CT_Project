@@ -1,0 +1,209 @@
+// Header Styles
+.header{
+
+    padding: 20px;
+    // creates some breathing space on top nav
+    overflow: hidden;
+
+    // Top Navigation only
+    .top {
+        // sets a centered fixed width for top content
+        margin: $center-content;
+    
+        a {
+            padding: 1.1px;
+            transition: 0.2s;
+            font-size: 17px;
+            text-transform: uppercase;
+            // overflow-y: hidden;
+            // remove default styles
+            &:hover {
+                color: $light-red;
+            }
+        }
+    
+        .current {
+            color: $light-red;
+            // color will be on current page
+        }
+    
+    }
+    // Responsive Menu
+    #mobile-nav {
+        display: block;
+        // Makes it display but not visible
+        height: 0;
+        // Removes Movile navigation on larger screens
+    }
+    // Open will add a height to the Mobile nav
+    .open {
+        height: auto !important;
+        // normal height length will over-ride the height 0
+    }
+
+}
+// landing page section outside header
+.landing-pg {
+    background: url('/images/Code4CT-homepage.jpg');
+    // opacity: 0.9;
+    background-color: $text-color;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    
+    background-blend-mode: multiply;
+
+    .landing-content {
+        color: #fff;
+        text-align: center;
+        top: 10rem;
+        // center the content inside the landing page
+        position: relative;
+        max-width: 900px;
+        margin: $center-content;
+        h1 {
+            font-size: 3em;
+        }
+    }
+}
+
+
+// Main section and below 
+main {
+    // padding: 10px;
+    // some spacing around the main content for mobile view
+    margin-top: 2.0em;
+}
+
+// ====================  About content default ====================
+.title {
+    width: 15em;
+    // Top Title section will be constant over all sizes
+
+    .line {
+        border: 1px solid $light-red;
+        // border: 0;
+        // height: 4px;
+        // background: #1e5799;
+        // background: $dark-red;
+        width: 5em;
+        // background: linear-gradient(to right,  $dark-red 20%,rgb(201, 200, 200) 50%);
+        // Line under the About us text
+    }
+}
+ // ================  about Section  ===================
+ .about {
+    //  Mobile Screen First
+    display: grid;        
+    grid-template-columns: repeat(1,1fr);
+    padding: 0;
+    grid-template-areas: 
+        "about_info"
+        "about_info"
+        "about_gallery"
+        "about_gallery";
+    .about-content {
+        grid-area: about_info;
+        // background: #eee;
+    }
+    .about-gallery {
+        grid-area: about_gallery;
+        display: grid;
+        // on mobile display grid
+        grid-template-columns: auto;
+        // 1 columns on mobile 
+        grid-gap: 10px;
+
+        .about-grid {
+            background: rgb(22, 21, 21);
+            // display: block;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+// Info Default section under about section
+.darkfullWidth {
+    background: $dark-back;
+}
+.info {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: #fff;
+    padding:0 5em;
+    // margin: 0 !important;
+    text-align: center;
+
+    i {
+        font-size: 3em;
+        color: $dark-red;
+        padding: 20px;
+        // spacing around the Icon
+        margin: 0;
+        // style the icon inside the header
+    }
+}
+
+// Courses Section under the Info Section
+.courses {
+    
+    // Courses default styles 
+    .courses_grid { 
+        
+        // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        // grid-template-columns: repeat(1,1fr);
+        // grid-template-rows: repeat(2,1fr);
+        // added rows
+        // grid-gap: 5px;
+        align-self: center;
+        align-content: center;
+        text-align: center;
+
+        .course_item {
+            width: 250px;
+            height: 250px;
+            background: $text-color;
+            // margin: 0 auto;
+        }
+        // Merging courses item 3 to 2 other spaces
+        .course_item3 {
+            // No merging on mobile
+            background: #3dfaaa;
+        }
+
+    }
+}
+
+// ========== Team Section ============ //
+.team {
+
+    // === Team members section === //
+    .team-content {
+        display: flex;
+
+        .team-inner {
+            margin: 1.4em;
+        }
+    } 
+
+}
+
+
+// ===== Slider and Subscribe section ===== //
+.counter {
+    background: #000;
+}
+
+
+// ===== Footer Section ====  //
+.footer {
+    display: flex;
+    // display the footer contents inline
+    .footer-item {
+        margin: 2em;
+
+    }
+}

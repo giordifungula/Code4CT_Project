@@ -1,0 +1,244 @@
+// Responsive Code
+
+// =========================== Mobile Styles ================================= //
+
+@media(max-width: 649px){
+
+    .container {
+        padding: 1em;
+        // margin: 0;
+        // remove default spacing for mobile screen 
+    }
+
+    .search-menu {
+        display: none;
+        padding: 20px;
+        // Hides the search box on mobile display
+    }
+// Top Navigation for Mobile
+    .top{
+        overflow: hidden;
+        // hide any overflow
+
+        #nav{
+            margin: 0;
+            display: none;
+            // will display on tablet and larger screen only
+        }
+
+        #menu-bar {
+            float: right;
+            position: relative;            
+            top: 5px;
+            // Navigation Menu moves to right;
+        }
+
+        #logo {
+            // margin-top: 10px;
+            float: left;
+            width: 50%;   
+            //Logo goes to left on mobile 
+        }
+
+        &:after {@include clearfix}
+        // clear any floats inside this section
+
+    }
+
+    // Mobile Nav inside Header 
+    #mobile-nav {
+        display: none;
+        text-align: center;
+        transition: 1s all;
+
+        a {
+            display: block;
+            transition: 0.5s;
+           
+            &:hover {
+            color: $light-red;
+            }
+        }
+    }
+
+    // landing page mobile section
+    .landing-pg {
+    //Mobile landing page container 
+        height: 100%;
+        overflow: hidden;
+        .landing-content {
+            padding: 2em;
+            top: 1rem;
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    }
+    // infoSection under the about section
+    .info {
+        
+    }
+    
+}
+
+//  ========================= Info Section ========================= //
+@media(max-width: 768px){
+   
+// Info Default section under about section
+    .info {
+
+    }
+
+}
+
+// media queries
+@media(min-width:770px){
+    // after the tablet view have this display
+        main {
+            // margin: 0 6em;
+            // padding: 0 6em;
+            // background: rgb(207, 29, 29);
+        }
+    
+        // Styling the about section]
+           // About section inside the main
+           .about {
+            padding: 50px;
+            display: flex;
+    
+            .about-content {
+                width: 52%;
+                margin: 10px;
+                // need a media query 
+            }
+    
+            .about-gallery {
+                // About us grid section
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: auto auto;
+                grid-gap: 10px;
+                width: 50%;
+            }
+            .about-grid {
+                background: rgb(0, 0, 0);
+                grid-gap: 10px;  
+            }
+        }
+        
+    }
+    // ============= Desktop and Beyond ================ //
+    
+    @media(min-width:800px){
+    .container {
+        padding:0 5em;
+        // margin: 0 5em;
+        // max-width: 1200px;
+    }
+    // Courses Normal Desktop Version first
+    .courses_grid {
+        display: grid;
+        // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,1fr);
+        // added rows
+        grid-gap: 5px;
+        align-self: center;
+        align-content: center;
+        text-align: center;
+
+        // .course_item {
+        //     width: 250px;
+        //     height: 250px;
+        //     background: $text-color;
+        // }
+        // Merging courses item 3 to 2 other spaces
+        .course_item3 {
+            grid-column: 3 / -1;
+            grid-row: 1 / -1;
+            // Takes the space of remaining columns and rows
+            width: 100% !important;
+            // displays full content
+            height: 100% !important;
+        }
+
+    }
+        main {
+            // margin: 0 5em;
+        }
+        
+    }
+    
+    // Mobile styles for the Middle and below
+    @media(max-width:600px){
+        // mobile styles for About section and below
+        .info {
+            grid-template-columns: auto;
+        }
+        // ========== Courses Section for Mobile ============= //
+        
+        .courses_grid {
+            display: flex;
+             flex-direction: column;
+            //  flex the courses for mobile phone
+            // grid-template-columns: auto;
+        }
+    }
+    
+    // Tablet and Desktop view 
+    // From base
+    @media(min-width: 650px){
+
+        .container {
+            // padding: 20px;
+            // creates some white space on tablet view
+        }
+    
+        #menu-bar{
+            display: none;
+            // hide menu bar for larger screens
+        }
+    
+        #logo {
+            display: block;
+            width: 50%;
+            float: left;
+            // hide logo for larger screens
+        }
+    
+        .top {
+            width: 650px;
+        }
+    
+        // Nav bar styles for Tablat and larger screens
+
+        nav {
+            // padding: 20px;
+            text-align: right;
+            display: inline;
+            // centers the nav inside this section
+            float: left;
+        }
+    
+        .search-menu {
+            float: right;
+            
+            button {
+                // padding: 0;
+                // margin: -4px;
+                color: $light-red;
+            }
+        }
+    
+        #mobile-nav {
+            display: none;
+            // Removes Movile version navigation on larger screens
+        }
+    
+        #mobile-nav {
+            display: none;
+            // Removes Movile version navigation on larger screens
+        }
+        
+    }

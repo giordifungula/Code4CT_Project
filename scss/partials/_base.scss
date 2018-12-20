@@ -1,0 +1,44 @@
+
+
+// =================================== Base Styles ======================== 
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body {
+
+    padding: 0;
+    margin: 0; 
+    font-weight: 500;
+    color: $text-color;
+    // background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7em;
+    width: 100%;
+}
+// Top section
+.container {
+    // background: #eee;
+    width: 100%;
+    // max-width when the screen is streched
+    // padding: 20px;
+    // max-width: 1400px;
+}
+img {
+    width: 100%;
+    // fits images completely inside the div
+}
+a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+}
+input {
+    padding: 1.5px;
+    // border-right: none;
+}
+
+// Tablet and Desktop view
+
+
+
