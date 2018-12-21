@@ -240,6 +240,9 @@ main {
       width: 100% !important;
       height: 100% !important; } }
 @media (max-width: 600px) {
+  body {
+    overflow: hidden; }
+
   .about-gallery .about-grid {
     height: 250px;
     margin: 0 auto; }
@@ -256,7 +259,7 @@ main {
     display: none; }
 
   #logo {
-    display: block;
+    display: none;
     width: 50%;
     float: left; }
 

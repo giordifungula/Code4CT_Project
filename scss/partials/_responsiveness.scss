@@ -173,6 +173,9 @@
     // Mobile styles for the Middle and below
     @media(max-width:600px){
         // mobile styles for About section and below
+        body {
+            overflow: hidden;
+        }
         .about-gallery {
 
             .about-grid {
@@ -211,7 +214,7 @@
         }
     
         #logo {
-            display: block;
+            display: none;
             width: 50%;
             float: left;
             // hide logo for larger screens
