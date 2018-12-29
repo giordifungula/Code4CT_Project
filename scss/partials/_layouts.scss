@@ -78,7 +78,7 @@ main {
 
 // ====================  About content default ====================
 .title {
-    width: 15em;
+    width: 17em;
     // Top Title section will be constant over all sizes
    .red {
     color: $light-red;
@@ -134,6 +134,9 @@ main {
 // Info Default section under about section
 .darkfullWidth {
     background: $dark-back;
+}
+.lightFullWidth {
+    background: #eee;
 }
 .info {
     display: grid;
@@ -192,6 +195,13 @@ main {
 
         .team-inner {
             margin: 1.4em;
+            display: flex;
+
+            .team-picture {
+                width: 300px;
+                margin: 1em;
+            }
+
         }
     } 
 
@@ -199,17 +209,27 @@ main {
 
 
 // ===== Slider and Subscribe section ===== //
-.counter {
-    background: #000;
+.counter, .slider  {
+    padding: 2em;
+    color: #fff;
 }
 
 
 // ===== Footer Section ====  //
 .footer {
     display: flex;
+    // background: #eee;
     // display the footer contents inline
     .footer-item {
-        margin: 2em;
+        margin: 1.5em;
 
+        ul {
+            // list-style: bullets;
+            padding: 10px;
+
+            li {
+                list-style: square;
+            }
+        }
     }
 }

@@ -96,7 +96,7 @@ main {
   margin-top: 2.0em; }
 
 .title {
-  width: 15em; }
+  width: 17em; }
   .title .red {
     color: #e1918a;
     border: 3px solid;
@@ -127,6 +127,9 @@ main {
 .darkfullWidth {
   background: #000; }
 
+.lightFullWidth {
+  background: #eee; }
+
 .info {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -153,15 +156,24 @@ main {
 .team .team-content {
   display: flex; }
   .team .team-content .team-inner {
-    margin: 1.4em; }
+    margin: 1.4em;
+    display: flex; }
+    .team .team-content .team-inner .team-picture {
+      width: 300px;
+      margin: 1em; }
 
-.counter {
-  background: #000; }
+.counter, .slider {
+  padding: 2em;
+  color: #fff; }
 
 .footer {
   display: flex; }
   .footer .footer-item {
-    margin: 2em; }
+    margin: 1.5em; }
+    .footer .footer-item ul {
+      padding: 10px; }
+      .footer .footer-item ul li {
+        list-style: square; }
 
 @media (max-width: 649px) {
   .container {
@@ -253,6 +265,9 @@ main {
 
   .courses_grid {
     display: flex;
+    flex-direction: column; }
+
+  .team .team-content {
     flex-direction: column; } }
 @media (min-width: 650px) {
   #menu-bar {

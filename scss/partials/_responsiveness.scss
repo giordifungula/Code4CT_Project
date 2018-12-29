@@ -188,7 +188,7 @@
             grid-template-columns: auto;
             padding: 0 3em;
         }
-        // ========== Courses Section for Mobile ============= //
+        // ========== Courses Section ============= //
         
         .courses_grid {
             display: flex;
@@ -196,6 +196,18 @@
             //  flex the courses for mobile phone
             // grid-template-columns: auto;
         }
+    // ========== Team Section  ============ //
+    .team {
+
+        .team-content {
+            flex-direction: column;
+
+            .team-inner {
+                
+            }
+        }
+    }
+
         
     }
     
