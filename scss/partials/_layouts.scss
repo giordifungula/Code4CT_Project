@@ -55,7 +55,7 @@
     background-blend-mode: multiply;
 
     .landing-content {
-        color: #fff;
+        color: $white;
         text-align: center;
         top: 10rem;
         // center the content inside the landing page
@@ -81,22 +81,16 @@ main {
     width: 17em;
     // Top Title section will be constant over all sizes
    .red {
-    color: $light-red;
+    color: $dark-red;
     border: 3px solid;
-    width: 50%;
+    width: 30%;
     top: 12px;
     left: -6em;
     position: relative;
    }
     .line {
         border: 1px solid $light-red;
-        // border: 0;
-        // height: 4px;
-        // background: #1e5799;
-        // background: $dark-red;
         width: 5em;
-        // background: linear-gradient(to right,  $dark-red 20%,rgb(201, 200, 200) 50%);
-        // Line under the About us text
     }
 }
  // ================  about Section  ===================
@@ -112,7 +106,7 @@ main {
         "about_gallery";
     .about-content {
         grid-area: about_info;
-        // background: #eee;
+        // background: $light-grey;
     }
     .about-gallery {
         grid-area: about_gallery;
@@ -136,12 +130,15 @@ main {
     background: $dark-back;
 }
 .lightFullWidth {
-    background: #eee;
+    background: $light-grey;
+}
+.redFullWidth {
+    background: $dark-red;
 }
 .info {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    color: #fff;
+    color: $white;
     padding:0 5em;
     // margin: 0 !important;
     text-align: center;
@@ -209,27 +206,121 @@ main {
 
 
 // ===== Slider and Subscribe section ===== //
-.counter, .slider  {
+.Counter, .slider,  {
     padding: 2em;
-    color: #fff;
+    color: $white;
 }
 
+.subscribe {
+    text-align: center;
+    padding: 2em;
+
+    .red-btn {
+        color: $white;    
+        border-radius: 4px;
+        // round the edges of the border
+        padding: 0.4em;
+        border:1px solid $light-grey;
+        transition: 1s all;
+        // background-color: $light-red;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+// ========= Counter ============= /@at-root
+.Counter {
+    display: flex;
+    // text-align: left;
+    // align-content: flex-start;
+    max-width: 700px;
+    margin:0 auto;
+    
+    // === line inside the counter === 
+    .line {
+        max-width: 43px;
+    }
+    hr {
+        width: 1.5em;
+        // color: $dark-red;
+        border:2px solid $dark-red;
+    }
+
+    .counter-content {
+        // display: inline;
+        // align-content: center;
+        // align-items: center;
+        
+        flex: 1 1 0;
+        width: 3em;
+    }
+    h5 {
+        font-weight: 300;
+        // margin: 0.2em;
+    }
+}
 
 // ===== Footer Section ====  //
 .footer {
     display: flex;
-    // background: #eee;
+    // background: $light-grey;
     // display the footer contents inline
+    overflow-x: visible;
+    // max-width: 773px;
+    margin: 0 auto;
+    text-align: left;
+
     .footer-item {
         margin: 1.5em;
-
+        
+        h2 {
+            color: $text-color;
+        }
+        
         ul {
             // list-style: bullets;
             padding: 10px;
-
+            // overflow-x: visible;
+            
             li {
-                list-style: square;
+                // list-style: square;
+                padding: 0.3em;
+                &:hover {
+                    color: $dark-red;
+                }
             }
         }
+    }
+}
+
+// ===== Bottom Footer ===== //
+.bottom-footer {
+    color: $white;
+    display: flex;
+
+    align-content: space-between;
+
+    .bottom-left {
+        align-content: flex-start;
+    }
+    .bottom-right {
+        align-content: flex-end;
+    }
+}
+
+
+
+// ============================= Contact Page ============================//
+.landing-top {
+    height: 10em;
+    background: $text-color;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+    flex: 1 1 0; 
+    .heading-content {
+        flex: 1 1 0;
+        text-align: center;
     }
 }

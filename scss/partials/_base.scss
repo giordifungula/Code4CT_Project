@@ -1,12 +1,16 @@
 
 
-// =================================== Base Styles ======================== 
+// ======================= Base Styles ======================== // 
 * {
     box-sizing: border-box;
+    // removed overflow from here to display bullets that were hidden
+}
+
+html {
     overflow-x: hidden;
 }
-body {
 
+body {
     padding: 0;
     margin: 0; 
     font-weight: 500;
@@ -16,6 +20,7 @@ body {
     line-height: 1.7em;
     width: 100%;
 }
+
 // Top section
 .container {
     // background: #eee;
@@ -35,10 +40,28 @@ a {
     color: black;
 }
 input {
-    padding: 1.5px;
-    // border-right: none;
-}
 
+    padding: 0.3em;
+    // border-right: none;
+    background: $light-grey;
+    color: $white;
+
+}
+.light-text {
+    // color: $light-grey;
+}
+h1 , h2 , h3 , h4 , h5 , h6 {
+
+    padding: 0;
+    margin: 0;
+
+}
+.counter {
+    
+    padding: 0.5em !important;
+    margin: 0;
+
+}
 // Tablet and Desktop view
 
 

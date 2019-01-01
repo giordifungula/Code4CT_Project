@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
   overflow-x: hidden; }
 
 body {
@@ -24,7 +26,17 @@ a {
   color: black; }
 
 input {
-  padding: 1.5px; }
+  padding: 0.3em;
+  background: #eee;
+  color: #fff; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
+.counter {
+  padding: 0.5em !important;
+  margin: 0; }
 
 body {
   font-size: 16px;
@@ -37,19 +49,20 @@ body {
 
 .btn {
   display: inline-block;
-  color: #eee;
+  color: #3f3f3f;
   border-radius: 4px;
-  padding: 1.5em 2em;
+  padding: 1em;
   border: 2px solid grey;
-  width: 200px;
   margin: 10px;
-  transition: 1s all;
-  background-color: rgba(0, 1, 1, 0.6); }
+  transition: 1s all; }
   .btn:hover {
     transform: translateX(10px); }
     .btn:hover .arrow {
       display: inline;
       transform: translateX(10px); }
+
+.white-btn {
+  background: #fff !important; }
 
 .arrow {
   display: none; }
@@ -98,9 +111,9 @@ main {
 .title {
   width: 17em; }
   .title .red {
-    color: #e1918a;
+    color: #ee534f;
     border: 3px solid;
-    width: 50%;
+    width: 30%;
     top: 12px;
     left: -6em;
     position: relative; }
@@ -129,6 +142,9 @@ main {
 
 .lightFullWidth {
   background: #eee; }
+
+.redFullWidth {
+  background: #ee534f; }
 
 .info {
   display: grid;
@@ -162,18 +178,72 @@ main {
       width: 300px;
       margin: 1em; }
 
-.counter, .slider {
+.Counter, .slider {
   padding: 2em;
   color: #fff; }
 
+.subscribe {
+  text-align: center;
+  padding: 2em; }
+  .subscribe .red-btn {
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.4em;
+    border: 1px solid #eee;
+    transition: 1s all;
+    font-family: Arial, Helvetica, sans-serif; }
+
+.Counter {
+  display: flex;
+  max-width: 700px;
+  margin: 0 auto; }
+  .Counter .line {
+    max-width: 43px; }
+  .Counter hr {
+    width: 1.5em;
+    border: 2px solid #ee534f; }
+  .Counter .counter-content {
+    flex: 1 1 0;
+    width: 3em; }
+  .Counter h5 {
+    font-weight: 300; }
+
 .footer {
-  display: flex; }
+  display: flex;
+  overflow-x: visible;
+  margin: 0 auto;
+  text-align: left; }
   .footer .footer-item {
     margin: 1.5em; }
+    .footer .footer-item h2 {
+      color: #3f3f3f; }
     .footer .footer-item ul {
       padding: 10px; }
       .footer .footer-item ul li {
-        list-style: square; }
+        padding: 0.3em; }
+        .footer .footer-item ul li:hover {
+          color: #ee534f; }
+
+.bottom-footer {
+  color: #fff;
+  display: flex;
+  align-content: space-between; }
+  .bottom-footer .bottom-left {
+    align-content: flex-start; }
+  .bottom-footer .bottom-right {
+    align-content: flex-end; }
+
+.landing-top {
+  height: 10em;
+  background: #3f3f3f;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex: 1 1 0; }
+  .landing-top .heading-content {
+    flex: 1 1 0;
+    text-align: center; }
 
 @media (max-width: 649px) {
   .container {
@@ -203,7 +273,9 @@ main {
   #mobile-nav {
     display: none;
     text-align: center;
-    transition: 1s all; }
+    transition: 1s all;
+    position: relative;
+    top: 17px; }
     #mobile-nav a {
       display: block;
       transition: 0.5s; }
@@ -267,7 +339,19 @@ main {
     display: flex;
     flex-direction: column; }
 
+  .course_item {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%; }
+
+  .team img {
+    width: 100%; }
   .team .team-content {
+    flex-direction: column; }
+    .team .team-content .team-inner {
+      flex-direction: column; }
+
+  footer {
     flex-direction: column; } }
 @media (min-width: 650px) {
   #menu-bar {
@@ -292,9 +376,6 @@ main {
       color: #e1918a; }
 
   #mobile-nav {
-    display: none; }
-
-  #mobile-nav {
-    display: none; } }
+    visibility: hidden; } }
 
 /*# sourceMappingURL=main.css.map */
