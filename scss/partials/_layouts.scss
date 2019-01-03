@@ -15,15 +15,16 @@
             transition: 0.2s;
             font-size: 17px;
             text-transform: uppercase;
+
             // overflow-y: hidden;
             // remove default styles
             &:hover {
-                color: $light-red;
+                color: $dark-red;
             }
         }
     
         .current {
-            color: $light-red;
+            color: $dark-red;
             // color will be on current page
         }
     
@@ -76,9 +77,10 @@ main {
     margin-top: 2.0em;
 }
 
-// ====================  About content default ====================
+// ============  About content default ==========
 .title {
     width: 17em;
+
     // Top Title section will be constant over all sizes
    .red {
     color: $dark-red;
@@ -312,15 +314,66 @@ main {
 // ============================= Contact Page ============================//
 .landing-top {
     height: 10em;
-    background: $text-color;
+    background: $light-grey;
     display: flex;
     align-items: center;
     align-content: center;
     text-align: center;
+    color: $text-color;
+
+    
 
     flex: 1 1 0; 
     .heading-content {
         flex: 1 1 0;
         text-align: center;
+        
+        nav {
+            // Styling the Navigation items
+            a {
+                transition: 0.5s;
+                &:hover {
+                    color: $dark-red;
+                }
+            }
+            
+        }
+
+    }
+}
+.contact-content {
+    display: flex;
+    padding-top: 3em;
+    margin: 0.5em;
+
+    // ===== Contact Form ==============//
+    form {
+        margin: 2em 0;
+        margin-right: 1.5em;
+
+        textarea {
+            background: $white;
+            margin: 2em 0;
+            // border-color: $text-color;
+            border: 1px solid $text-color;
+            display: block;
+        }
+    }
+    input {
+
+        background: $white;
+        color: $text-color;
+        border: 1px solid;
+        border-radius: 5px;
+
+    }
+
+    .contact-icon {
+        display: flex;
+        margin: 1.5em;
+
+        i {
+            // margin: 0.2em;
+        }
     }
 }

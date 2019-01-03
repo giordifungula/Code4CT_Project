@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.5em !important;
   margin: 0; }
 
+.heading-top {
+  text-transform: uppercase;
+  margin: 0.5em; }
+
 body {
   font-size: 16px;
   color: black;
@@ -78,9 +82,9 @@ body {
       font-size: 17px;
       text-transform: uppercase; }
       .header .top a:hover {
-        color: #e1918a; }
+        color: #ee534f; }
     .header .top .current {
-      color: #e1918a; }
+      color: #ee534f; }
   .header #mobile-nav {
     display: block;
     height: 0; }
@@ -235,15 +239,41 @@ main {
 
 .landing-top {
   height: 10em;
-  background: #3f3f3f;
+  background: #eee;
   display: flex;
   align-items: center;
   align-content: center;
   text-align: center;
+  color: #3f3f3f;
   flex: 1 1 0; }
   .landing-top .heading-content {
     flex: 1 1 0;
     text-align: center; }
+    .landing-top .heading-content nav a {
+      transition: 0.5s; }
+      .landing-top .heading-content nav a:hover {
+        color: #ee534f; }
+
+.contact-content {
+  display: flex;
+  padding-top: 3em;
+  margin: 0.5em; }
+  .contact-content form {
+    margin: 2em 0;
+    margin-right: 1.5em; }
+    .contact-content form textarea {
+      background: #fff;
+      margin: 2em 0;
+      border: 1px solid #3f3f3f;
+      display: block; }
+  .contact-content input {
+    background: #fff;
+    color: #3f3f3f;
+    border: 1px solid;
+    border-radius: 5px; }
+  .contact-content .contact-icon {
+    display: flex;
+    margin: 1.5em; }
 
 @media (max-width: 649px) {
   .container {
