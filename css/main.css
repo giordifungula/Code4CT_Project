@@ -218,7 +218,14 @@ main {
   margin: 0 auto;
   text-align: left; }
   .footer .footer-item {
-    margin: 1.5em; }
+    margin: 1.2em; }
+    .footer .footer-item .footer-icon {
+      display: flex;
+      margin: 1.4em; }
+      .footer .footer-item .footer-icon .icon {
+        margin: 0 20px; }
+    .footer .footer-item:first-child {
+      padding-top: 2em; }
     .footer .footer-item h2 {
       color: #3f3f3f; }
     .footer .footer-item ul {

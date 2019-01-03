@@ -270,10 +270,27 @@ main {
     // max-width: 773px;
     margin: 0 auto;
     text-align: left;
-
+    
     .footer-item {
-        margin: 1.5em;
-        
+        margin: 1.2em;
+    
+        .footer-icon {
+            display: flex;
+            margin: 1.4em;
+            // Icons inside the footer Item
+
+            .icon {
+                margin: 0 20px;
+                // some inner space inside the footer icon
+            }
+            
+        }
+
+    // First Footer Item has spacing        
+        &:first-child {
+            padding-top: 2em;
+        }    
+
         h2 {
             color: $text-color;
         }
