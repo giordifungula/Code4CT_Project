@@ -274,17 +274,7 @@ main {
     .footer-item {
         margin: 1.2em;
     
-        .footer-icon {
-            display: flex;
-            margin: 1.4em;
-            // Icons inside the footer Item
-
-            .icon {
-                margin: 0 20px;
-                // some inner space inside the footer icon
-            }
-            
-        }
+    // Footer Icon added to base styles
 
     // First Footer Item has spacing        
         &:first-child {
@@ -329,7 +319,7 @@ main {
 
 
 // ============================= Contact Page ============================//
-.landing-top {
+.landing-top, .portfolio-content {
     height: 10em;
     background: $light-grey;
     display: flex;
@@ -338,7 +328,6 @@ main {
     text-align: center;
     color: $text-color;
 
-    
 
     flex: 1 1 0; 
     .heading-content {
@@ -358,22 +347,26 @@ main {
 
     }
 }
+
 .contact-content {
     display: flex;
     padding-top: 3em;
     margin: 0.5em;
 
-    // ===== Contact Form ==============//
+    // ============= Contact Form ============//
+
     form {
         margin: 2em 0;
         margin-right: 1.5em;
 
         textarea {
+
             background: $white;
             margin: 2em 0;
             // border-color: $text-color;
             border: 1px solid $text-color;
             display: block;
+
         }
     }
     input {
@@ -392,5 +385,24 @@ main {
         i {
             // margin: 0.2em;
         }
+    }
+}
+
+// ================== Portfolio Page ===================//
+.portfolio-content {
+        // ==== inherits landing contact properties above =====
+
+    background: $white !important;
+    // ==== background is only 
+
+    // === Style the specific border === //
+    .title {
+        margin: 0 auto;
+        width: 18em !important;
+        // centers the title
+        .red {
+            left: 0em;
+        }
+
     }
 }

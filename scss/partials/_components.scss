@@ -49,3 +49,22 @@ body {
     display: none;
     // arrow that displays when hovered
 }
+
+// Icons that will be used over
+.footer-icon {
+    display: flex;
+    margin: 1.4em;
+    // Icons inside the footer Item
+
+    .icon {
+        margin: 0 20px;
+        // some inner space inside the footer icon
+    }
+    .icon-text {
+        h4 {
+            color: $text-color;
+
+        }
+    }
+    
+}

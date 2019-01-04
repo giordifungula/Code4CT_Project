@@ -71,6 +71,14 @@ body {
 .arrow {
   display: none; }
 
+.footer-icon {
+  display: flex;
+  margin: 1.4em; }
+  .footer-icon .icon {
+    margin: 0 20px; }
+  .footer-icon .icon-text h4 {
+    color: #3f3f3f; }
+
 .header {
   padding: 20px;
   overflow: hidden; }
@@ -219,11 +227,6 @@ main {
   text-align: left; }
   .footer .footer-item {
     margin: 1.2em; }
-    .footer .footer-item .footer-icon {
-      display: flex;
-      margin: 1.4em; }
-      .footer .footer-item .footer-icon .icon {
-        margin: 0 20px; }
     .footer .footer-item:first-child {
       padding-top: 2em; }
     .footer .footer-item h2 {
@@ -244,7 +247,7 @@ main {
   .bottom-footer .bottom-right {
     align-content: flex-end; }
 
-.landing-top {
+.landing-top, .portfolio-content {
   height: 10em;
   background: #eee;
   display: flex;
@@ -253,12 +256,12 @@ main {
   text-align: center;
   color: #3f3f3f;
   flex: 1 1 0; }
-  .landing-top .heading-content {
+  .landing-top .heading-content, .portfolio-content .heading-content {
     flex: 1 1 0;
     text-align: center; }
-    .landing-top .heading-content nav a {
+    .landing-top .heading-content nav a, .portfolio-content .heading-content nav a {
       transition: 0.5s; }
-      .landing-top .heading-content nav a:hover {
+      .landing-top .heading-content nav a:hover, .portfolio-content .heading-content nav a:hover {
         color: #ee534f; }
 
 .contact-content {
@@ -281,6 +284,14 @@ main {
   .contact-content .contact-icon {
     display: flex;
     margin: 1.5em; }
+
+.portfolio-content {
+  background: #fff !important; }
+  .portfolio-content .title {
+    margin: 0 auto;
+    width: 18em !important; }
+    .portfolio-content .title .red {
+      left: 0em; }
 
 @media (max-width: 649px) {
   .container {
