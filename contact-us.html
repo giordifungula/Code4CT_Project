@@ -211,5 +211,20 @@
     <script src="jquery.counterup.min.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script>
+    // ======== Maps ==========//
+    function createMap(){
+        let location = {
+            lat: -33.9247248,
+            long: 18.4485865
+        };
+        let map = new google.maps.Map(document.getElementById('map'),{
+            zoom: 4,
+            center: location
+        });
+
+    }
+    </script>
 </body>
 </html>

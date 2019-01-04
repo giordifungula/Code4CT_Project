@@ -285,6 +285,11 @@ main {
     display: flex;
     margin: 1.5em; }
 
+#map {
+  max-width: 100%;
+  height: 30em;
+  background: #a16161; }
+
 .portfolio-content {
   background: #fff !important; }
   .portfolio-content .title {
