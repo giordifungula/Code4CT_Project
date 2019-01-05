@@ -26,7 +26,7 @@ a {
   color: black; }
 
 input {
-  padding: 0.3em;
+  padding: 0.2em;
   background: #eee;
   color: #fff; }
 
@@ -73,9 +73,16 @@ body {
 
 .footer-icon {
   display: flex;
-  margin: 1.4em; }
+  margin: 1.4em;
+  align-items: center; }
+  .footer-icon:nth-child(3) .icon {
+    color: #ee534f;
+    border: 1px solid #ee534f; }
   .footer-icon .icon {
-    margin: 0 20px; }
+    margin: 0 20px;
+    border: 1px solid #3f3f3f;
+    border-radius: 3px;
+    padding: 4px; }
   .footer-icon .icon-text h4 {
     color: #3f3f3f; }
 
@@ -121,7 +128,8 @@ main {
   margin-top: 2.0em; }
 
 .title {
-  width: 17em; }
+  width: 17em;
+  padding: 1.5em 0; }
   .title .red {
     color: #ee534f;
     border: 3px solid;
@@ -186,6 +194,8 @@ main {
   .team .team-content .team-inner {
     margin: 1.4em;
     display: flex; }
+    .team .team-content .team-inner .icons i {
+      margin: 0.5em; }
     .team .team-content .team-inner .team-picture {
       width: 300px;
       margin: 1em; }
@@ -241,11 +251,17 @@ main {
 .bottom-footer {
   color: #fff;
   display: flex;
-  align-content: space-between; }
+  justify-content: space-between; }
   .bottom-footer .bottom-left {
     align-content: flex-start; }
   .bottom-footer .bottom-right {
     align-content: flex-end; }
+    .bottom-footer .bottom-right .bottom-content {
+      display: flex;
+      align-content: center;
+      align-items: center; }
+      .bottom-footer .bottom-right .bottom-content i {
+        margin: 0.5em; }
 
 .landing-top, .portfolio-content {
   height: 10em;
@@ -291,12 +307,32 @@ main {
   background: #a16161; }
 
 .portfolio-content {
+  display: inline !important;
+  padding-top: 1.5em;
   background: #fff !important; }
   .portfolio-content .title {
     margin: 0 auto;
     width: 18em !important; }
     .portfolio-content .title .red {
       left: 0em; }
+  .portfolio-content p {
+    margin-top: 0; }
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+  margin: 0; }
+  .portfolio-grid .grid {
+    background: #eee;
+    width: 338px;
+    max-width: 100%;
+    height: 200px; }
+    .portfolio-grid .grid:nth-of-type(2n) {
+      background: #3f3f3f;
+      max-width: 100%; }
+    .portfolio-grid .grid:nth-of-type(3n) {
+      width: 345px; }
 
 @media (max-width: 649px) {
   .container {
@@ -426,7 +462,8 @@ main {
   .search-menu {
     float: right; }
     .search-menu button {
-      color: #e1918a; }
+      color: #e1918a;
+      padding: 0.2em 5px; }
 
   #mobile-nav {
     visibility: hidden; } }

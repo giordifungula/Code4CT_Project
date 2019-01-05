@@ -80,6 +80,7 @@ main {
 // ============  About content default ==========
 .title {
     width: 17em;
+    padding: 1.5em 0;
 
     // Top Title section will be constant over all sizes
    .red {
@@ -196,6 +197,10 @@ main {
             margin: 1.4em;
             display: flex;
 
+            // 
+            .icons i{
+                margin: 0.5em;
+            }
             .team-picture {
                 width: 300px;
                 margin: 1em;
@@ -306,14 +311,29 @@ main {
     color: $white;
     display: flex;
 
-    align-content: space-between;
+    justify-content: space-between;
+    // ==== Spaces the content inside the bottom footer ===== //
 
     .bottom-left {
         align-content: flex-start;
     }
+
     .bottom-right {
         align-content: flex-end;
+
+        .bottom-content {
+            display: flex;
+            align-content: center;
+            align-items: center;
+
+            i {
+                margin: 0.5em;
+                // === Icons inside the bottom content ===
+            }
+        }
+        
     }
+
 }
 
 
@@ -397,11 +417,14 @@ main {
 
 
 // ================== Portfolio Page ===================//
+
 .portfolio-content {
         // ==== inherits landing contact properties above =====
 
+    display: inline !important;
+    padding-top: 1.5em;
+    // ===== allow title content to display directly under with top spacing =====
     background: $white !important;
-    // ==== background is only 
 
     // === Style the specific border === //
     .title {
@@ -411,6 +434,35 @@ main {
         .red {
             left: 0em;
         }
+    }
+    p {
+        margin-top: 0;
+    }
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0px;
+    margin: 0;
 
+    
+    .grid {
+        background: $light-grey;
+        width: 338px;
+        max-width: 100%;
+        height: 200px;
+        &:nth-of-type(2n){
+            background: $text-color;
+            // === Every 2nd grid styled differently;
+            // width: 200px;
+            max-width: 100%;
+        }
+        &:nth-of-type(3n){
+            width: 345px;
+        }
+    }
+    // grid custom styles
+    .grid1, .grid2 , .grid3 {
+        // background: $dark-red;
     }
 }

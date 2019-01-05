@@ -54,12 +54,27 @@ body {
 .footer-icon {
     display: flex;
     margin: 1.4em;
+    align-items: center;
+    
     // Icons inside the footer Item
+    &:nth-child(3){
+
+        .icon {
+            color:$dark-red;
+            border: 1px solid $dark-red;
+            // the 3rd icon will be dark red inside the footer only
+        }
+    }
 
     .icon {
         margin: 0 20px;
         // some inner space inside the footer icon
+        border: 1px solid  $text-color;
+        border-radius: 3px;
+        padding: 4px;
+        // creates border around icon
     }
+
     .icon-text {
         h4 {
             color: $text-color;
