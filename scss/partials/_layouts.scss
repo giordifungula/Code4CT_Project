@@ -9,6 +9,7 @@
     .top {
         // sets a centered fixed width for top content
         margin: $center-content;
+        // position: fixed;
     
         a {
             padding: 1.1px;
@@ -444,21 +445,26 @@ main {
     grid-template-columns: repeat(4,1fr);
     grid-gap: 0px;
     margin: 0;
-
     
     .grid {
         background: $light-grey;
-        width: 338px;
+        width: 318px;
         max-width: 100%;
         height: 200px;
+        transition: 0.5s ease;
+        transform: scale(10deg);
+        margin: 0 -20px;
+        &:hover {
+            background: $dark-red !important;
+        }
         &:nth-of-type(2n){
             background: $text-color;
             // === Every 2nd grid styled differently;
-            // width: 200px;
+            width: 350px;
             max-width: 100%;
         }
         &:nth-of-type(3n){
-            width: 345px;
+            // width: 345px;
         }
     }
     // grid custom styles
