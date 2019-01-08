@@ -14,6 +14,8 @@ body {
 
 .red-btn {
     background-color: $dark-red !important;
+    color:#fff !important;
+    border: none !important;
     // dark red color for button
 }
 
@@ -73,6 +75,11 @@ body {
         border: 1px solid  $text-color;
         border-radius: 3px;
         padding: 4px;
+         i {
+            // margin: 0 auto;
+            // font-size: 2em;
+                // ==== Please look at different fonts to make sure they aligned together==== 
+         }
         // creates border around icon
     }
 

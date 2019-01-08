@@ -472,3 +472,49 @@ main {
         // background: $dark-red;
     }
 }
+
+// ================== About Page ===================//
+.about-page-top {
+    display: flex;
+    // margin: 3em 10em;
+    // margin: 0 auto;
+    
+    .title {
+        // width:
+    }
+    .about-page-text {
+        max-width: 400px;
+    }
+    .about-page-right {
+        .about-right-image{
+            max-width: 400px;
+        }
+
+    }
+}
+
+.about-full-screen {
+    width: 100%;
+    display: flex;
+    // margin: 1em 0;
+
+    .about-screen-half{
+        width: 50%;
+        // max-width: 650px;
+        // margin: 1em;
+        background: $light-grey;
+
+        &:first-child{
+            padding-right: 1em;
+            // === creates space in first section ===
+        }
+
+        .about-page-content {
+            .about-page-text {
+                h4 {
+                    color: $dark-red;
+                }
+            }
+        }
+    }
+}

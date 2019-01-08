@@ -49,7 +49,9 @@ body {
   line-height: 1.2; }
 
 .red-btn {
-  background-color: #ee534f !important; }
+  background-color: #ee534f !important;
+  color: #fff !important;
+  border: none !important; }
 
 .btn {
   display: inline-block;
@@ -340,6 +342,24 @@ main {
       width: 350px;
       max-width: 100%; }
 
+.about-page-top {
+  display: flex; }
+  .about-page-top .about-page-text {
+    max-width: 400px; }
+  .about-page-top .about-page-right .about-right-image {
+    max-width: 400px; }
+
+.about-full-screen {
+  width: 100%;
+  display: flex; }
+  .about-full-screen .about-screen-half {
+    width: 50%;
+    background: #eee; }
+    .about-full-screen .about-screen-half:first-child {
+      padding-right: 1em; }
+    .about-full-screen .about-screen-half .about-page-content .about-page-text h4 {
+      color: #ee534f; }
+
 @media (max-width: 649px) {
   .container {
     padding: 1em; }
@@ -384,7 +404,13 @@ main {
       padding: 2em;
       top: 1rem; }
       .landing-pg .landing-content h1 {
-        font-size: 2em; } }
+        font-size: 2em; }
+
+  .contact-content {
+    flex-direction: column; }
+
+  .about-page-top {
+    flex-direction: column; } }
 @media (min-width: 770px) {
   .about {
     padding: 50px;
