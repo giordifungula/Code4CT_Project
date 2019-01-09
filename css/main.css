@@ -355,6 +355,8 @@ main {
   .about-full-screen .about-screen-half {
     width: 50%;
     background: #eee; }
+    .about-full-screen .about-screen-half img {
+      margin: auto 0; }
     .about-full-screen .about-screen-half:first-child {
       padding-right: 1em; }
     .about-full-screen .about-screen-half .about-page-content .about-page-text h4 {
@@ -473,7 +475,12 @@ main {
       flex-direction: column; }
 
   footer {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .about-full-screen {
+    flex-direction: column; }
+    .about-full-screen .about-screen-half {
+      width: 100%; } }
 @media (min-width: 650px) {
   #menu-bar {
     display: none; }
