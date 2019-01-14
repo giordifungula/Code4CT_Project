@@ -218,6 +218,14 @@ main {
     padding: 2em;
     color: $white;
 }
+// ====== Counter content ====== //
+.counter-text {
+    display: inline-flex;
+    i {
+        margin-top: 1.1em;
+        // center the Plus sign    
+    }
+}
 
 .subscribe {
     text-align: center;

@@ -36,7 +36,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .counter {
   padding: 0.5em !important;
-  margin: 0; }
+  margin: 0;
+  font-size: 1.5em; }
 
 .heading-top {
   text-transform: uppercase;
@@ -207,6 +208,11 @@ main {
 .Counter, .slider {
   padding: 2em;
   color: #fff; }
+
+.counter-text {
+  display: inline-flex; }
+  .counter-text i {
+    margin-top: 1.1em; }
 
 .subscribe {
   text-align: center;

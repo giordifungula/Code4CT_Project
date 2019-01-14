@@ -16,7 +16,7 @@ $(document).ready(function(){
         // $('#mobile-nav').style.height = '100px';
     });
     // console.log('hey');
-    $('.counter').counterUp({
+    $('span').counterUp({
         delay: 10,
         time: 1000
     });
