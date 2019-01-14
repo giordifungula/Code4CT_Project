@@ -477,18 +477,22 @@ main {
 .about-page-top {
     display: flex;
     // margin: 3em 10em;
-    // margin: 0 auto;
+    margin: 0 10em;
     
     .title {
         // width:
     }
     .about-page-text {
         max-width: 400px;
+        margin: 1em 0 2em;
     }
     .about-page-right {
         .about-right-image{
             max-width: 400px;
         }
+        align-items: center;
+        align-content: center;
+        margin: auto auto;
 
     }
 }
