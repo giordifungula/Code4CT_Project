@@ -197,7 +197,13 @@ main {
         .team-inner {
             margin: 1.4em;
             display: flex;
-
+        
+            .team-info{
+                // ==== Style the Team info mainly text
+                .light-text{
+                    width: 12em;
+                }
+            }
             // 
             .icons i{
                 margin: 0.5em;

@@ -199,6 +199,8 @@ main {
   .team .team-content .team-inner {
     margin: 1.4em;
     display: flex; }
+    .team .team-content .team-inner .team-info .light-text {
+      width: 12em; }
     .team .team-content .team-inner .icons i {
       margin: 0.5em; }
     .team .team-content .team-inner .team-picture {
