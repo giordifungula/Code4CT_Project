@@ -3,6 +3,8 @@
 {
     position: relative;
     width: 70em;
+    margin: auto auto;
+
     /* ===== Increased the Max width of the Slider content */
     display: block;
     box-sizing: border-box;
