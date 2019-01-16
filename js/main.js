@@ -29,7 +29,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
-        slidesToShow: 6,
+        slidesToShow: 10,
         slidesToScroll: 4
       });
 });
