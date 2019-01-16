@@ -15,10 +15,22 @@ $(document).ready(function(){
         console.log($('#mobile-nav').toggleClass('open'));
         // $('#mobile-nav').style.height = '100px';
     });
-    // console.log('hey');
+    // ===== CounterUp ===== ;
     $('.counter').counterUp({
         delay: 10,
         time: 1000
     });
+
+    // ==== Slider ====
+    $(".center").slick({
+        variableWidth: true,
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        slidesToShow: 6,
+        slidesToScroll: 4
+      });
 });
 
