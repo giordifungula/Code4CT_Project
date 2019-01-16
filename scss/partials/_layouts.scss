@@ -197,7 +197,7 @@ main {
         .team-inner {
             margin: 1.4em;
             display: flex;
-        
+            width: 50%;
             .team-info{
                 // ==== Style the Team info mainly text
                 .light-text{
@@ -456,25 +456,26 @@ main {
 }
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    // grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     grid-gap: 0px;
     margin: 0;
     
     .grid {
         background: $light-grey;
-        width: 318px;
+        // width: 318px;
         max-width: 100%;
         height: 200px;
         transition: 0.5s ease;
         transform: scale(10deg);
-        margin: 0 -20px;
+        // margin: 0 -20px;
         &:hover {
             background: $dark-red !important;
         }
         &:nth-of-type(2n){
             background: $text-color;
             // === Every 2nd grid styled differently;
-            width: 350px;
+            // width: 350px;
             max-width: 100%;
         }
         &:nth-of-type(3n){

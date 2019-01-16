@@ -18,7 +18,7 @@ $(document).ready(function(){
     // console.log('hey');
     $('.counter').counterUp({
         delay: 10,
-        time: 2000
+        time: 1000
     });
 });
 

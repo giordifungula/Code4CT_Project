@@ -18,7 +18,8 @@ body {
   width: 100%; }
 
 img {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 a {
   text-decoration: none;
@@ -198,7 +199,8 @@ main {
   display: flex; }
   .team .team-content .team-inner {
     margin: 1.4em;
-    display: flex; }
+    display: flex;
+    width: 50%; }
     .team .team-content .team-inner .team-info .light-text {
       width: 12em; }
     .team .team-content .team-inner .icons i {
@@ -332,22 +334,19 @@ main {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 0px;
   margin: 0; }
   .portfolio-grid .grid {
     background: #eee;
-    width: 318px;
     max-width: 100%;
     height: 200px;
     transition: 0.5s ease;
-    transform: scale(10deg);
-    margin: 0 -20px; }
+    transform: scale(10deg); }
     .portfolio-grid .grid:hover {
       background: #ee534f !important; }
     .portfolio-grid .grid:nth-of-type(2n) {
       background: #3f3f3f;
-      width: 350px;
       max-width: 100%; }
 
 .about-page-top {
