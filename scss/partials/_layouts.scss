@@ -143,7 +143,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     color: $white;
-    padding:0 5em;
+    padding:2em 5em;
     // margin: 0 !important;
     text-align: center;
 
@@ -236,7 +236,16 @@ main {
 .subscribe {
     text-align: center;
     padding: 2em;
+    .subscribe-text {
+        
+        display: inline-flex;
 
+        // ==== Subscribe text styling ==== //
+        i {
+            color: $dark-red;
+            margin: auto 1em;
+        }
+    }
     .red-btn {
         color: $white;    
         border-radius: 4px;
@@ -509,7 +518,7 @@ main {
         align-items: center;
         align-content: center;
         margin: auto auto;
-        
+
     }
 }
 

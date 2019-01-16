@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 * {
   box-sizing: border-box; }
 
@@ -10,7 +11,7 @@ body {
   margin: 0;
   font-weight: 500;
   color: #3f3f3f;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.7em;
   width: 100%; }
 
@@ -43,6 +44,9 @@ h1, h2, h3, h4, h5, h6 {
 .heading-top {
   text-transform: uppercase;
   margin: 0.5em; }
+
+.current {
+  max-width: 800px; }
 
 .slide {
   width: 50%;
@@ -200,7 +204,7 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   color: #fff;
-  padding: 0 5em;
+  padding: 2em 5em;
   text-align: center; }
   .info i {
     font-size: 3em;
@@ -245,6 +249,11 @@ main {
 .subscribe {
   text-align: center;
   padding: 2em; }
+  .subscribe .subscribe-text {
+    display: inline-flex; }
+    .subscribe .subscribe-text i {
+      color: #ee534f;
+      margin: auto 1em; }
   .subscribe .red-btn {
     color: #fff;
     border-radius: 4px;

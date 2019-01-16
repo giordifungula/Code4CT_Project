@@ -1,4 +1,5 @@
-
+// ==== Font Imports =====s
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 // ======================= Base Styles ======================== // 
 * {
@@ -16,7 +17,7 @@ body {
     font-weight: 500;
     color: $text-color;
     // background-color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.7em;
     width: 100%;
 }
@@ -74,7 +75,7 @@ h1 , h2 , h3 , h4 , h5 , h6 {
     .current {
         max-width: 800px;
     }
-    
+
     .slide {
         width: 50%;
         margin: auto auto;
