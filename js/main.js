@@ -32,5 +32,62 @@ $(document).ready(function(){
         slidesToShow: 10,
         slidesToScroll: 4
       });
+
+    // ==== Progress Bar ====
+    var progress_circle1 = $(".progress-bar1").circularProgress({
+            // options here
+            line_width: 6,
+            color: "#ee534f ",
+            starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+            percent: 0, // percent starts from
+            percentage: true
+            // text: "More power behind every pixel"
+            }).circularProgress('animate', 80, 3000);
+        // });
+        var progress_circle2 = $(".progress-bar2").circularProgress({
+            // options here
+            line_width: 6,
+            color: "#ee534f ",
+            starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+            percent: 0, // percent starts from
+            percentage: true
+            // text: "More power behind every pixel"
+            }).circularProgress('animate', 80, 3000);
+        var progress_circle3 = $(".progress-bar3").circularProgress({
+            // options here
+            line_width: 6,
+            color: "#ee534f ",
+            starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+            percent: 0, // percent starts from
+            percentage: true
+            // text: "More power behind every pixel"
+            }).circularProgress('animate', 80, 3000);
+        var progress_circle4 = $(".progress-bar4").circularProgress({
+            // options here
+            line_width: 6,
+            color: "#ee534f ",
+            starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+            percent: 0, // percent starts from
+            percentage: true
+            // text: "More power behind every pixel"
+            }).circularProgress('animate', 80, 3000);
+        var progress_circle5 = $(".progress-bar5").circularProgress({
+            // options here
+            line_width: 6,
+            color: "#ee534f ",
+            starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+            percent: 0, // percent starts from
+            percentage: true
+            // text: "More power behind every pixel"
+            }).circularProgress('animate', 80, 3000);
+        var progress_circle6 = $(".progress-bar6").circularProgress({
+            // options here
+            line_width: 6,
+            color: "#ee534f ",
+            starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+            percent: 0 // percent starts from
+            // percentage: false
+            // text: "More power behind every pixel"
+            }).circularProgress('animate', 80, 3000);
 });
 

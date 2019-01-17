@@ -525,7 +525,26 @@ main {
 
     }
 }
+.Progress-bars {
+    display: flex;
+    .progress-content{
+        color: #fff;
+        width: 300px;
+        margin-top:2em;
 
+        .Progress-text {
+            text-align: center;
+        }
+    }
+
+    div {
+        // width: 300px;
+    }
+    .progress-bar1 {
+        // width:200px;
+        margin-right: 0 !important;
+    }
+}
 .about-full-screen {
     width: 100%;
     display: flex;
