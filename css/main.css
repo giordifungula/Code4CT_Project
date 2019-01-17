@@ -422,7 +422,11 @@ main {
     display: flex; }
     .course-content .course-items .course-item {
       margin: 1em;
-      text-align: center; }
+      text-align: center;
+      border: 1px solid #e1918a;
+      padding: 6px;
+      background: #fff;
+      box-shadow: 5px 10px 8px #888888; }
 
 @media (max-width: 649px) {
   .container {

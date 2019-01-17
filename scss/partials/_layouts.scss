@@ -595,6 +595,11 @@ main {
         .course-item {
             margin: 1em;
             text-align: center;
+            border: 1px solid $light-red;
+            padding: 6px;
+            background: $white;
+            // box-shadow: 1px 20px 20px 3px #eee;
+            box-shadow: 5px 10px 8px #888888;
         }
     }
 }
