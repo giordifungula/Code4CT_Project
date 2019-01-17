@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   padding: 1em;
   border: 2px solid grey;
+  width: 170px;
   margin: 10px;
   transition: 1s all; }
   .btn:hover {
@@ -412,6 +413,16 @@ main {
       padding-right: 1em; }
     .about-full-screen .about-screen-half .about-page-content .about-page-text h4 {
       color: #ee534f; }
+
+.course-content {
+  padding: 3em; }
+  .course-content .course-text {
+    text-align: center; }
+  .course-content .course-items {
+    display: flex; }
+    .course-content .course-items .course-item {
+      margin: 1em;
+      text-align: center; }
 
 @media (max-width: 649px) {
   .container {

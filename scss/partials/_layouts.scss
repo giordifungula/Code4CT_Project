@@ -6,7 +6,7 @@
     overflow: hidden;
     // position: fixed;
     // width: 100%;
-    // background: $text-color;
+    // background:#f9f9f9;
     // z-index: 1000;
 
     // Top Navigation only
@@ -578,6 +578,23 @@ main {
                     color: $dark-red;
                 }
             }
+        }
+    }
+}
+
+
+// =============== Courses Page =================
+.course-content {
+    // margin: 1em;
+    padding: 3em;
+    .course-text {
+        text-align: center;
+    }
+    .course-items {
+        display: flex;
+        .course-item {
+            margin: 1em;
+            text-align: center;
         }
     }
 }
