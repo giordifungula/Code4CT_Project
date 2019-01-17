@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700i');
+
+.circular-progress-bar {
+    position: relative;
+    /* margin: 0 auto; */
+    text-align: center;
+    /* width: 100px !important; */
+    margin-bottom: -113px;
+    /* === Decreases the spacing === */
+}
+canvas {
+    width: 145px;
+    margin: 0 !important;
+    /* Remove default spacing  */
+
+}
+.progress-percentage, .progress-text {
+     position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    /* padding: 0px 60px; */
+}
+
+.progress-percentage {
+    font-size: 1em;
+    color: #fff;
+    transform: translate(-28%, -100%);
+    text-align: center;
+    font-size: 2em;
+}
+
+.progress-text {
+    transform: translate(-50%, 0%);
+    color: #585858;
+    font-size: 21px;
+}
