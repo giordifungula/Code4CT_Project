@@ -146,10 +146,11 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     top: 10rem;
     position: relative;
-    max-width: 900px;
+    max-width: 802px;
     margin: 0 auto; }
     .landing-pg .landing-content h1 {
-      font-size: 3em; }
+      font-size: 3em;
+      line-height: 0.9; }
 
 main {
   margin-top: 2.0em; }

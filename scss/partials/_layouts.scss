@@ -64,12 +64,18 @@
         color: $white;
         text-align: center;
         top: 10rem;
+
         // center the content inside the landing page
         position: relative;
-        max-width: 900px;
+        max-width: 802px;
         margin: $center-content;
+
+        // ==== Have a look at the widths for the heading and parent div ===== /
+
         h1 {
             font-size: 3em;
+            line-height: 0.9;
+            // Increases spacing around the heading
         }
     }
 }
