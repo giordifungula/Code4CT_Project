@@ -362,71 +362,62 @@ main {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 0px;
-  margin: 0; }
-  .portfolio-grid .grid {
-    background: #eee;
-    max-width: 100%;
-    height: 200px;
-    transition: 0.5s ease;
-    transform: scale(10deg); }
-    .portfolio-grid .grid:hover {
-      background: #ee534f !important; }
-    .portfolio-grid .grid:nth-of-type(2n) {
-      background: #3f3f3f;
-      max-width: 100%; }
-
-.about-page-top {
-  display: flex;
-  margin: 0 10em; }
-  .about-page-top .about-page-text {
-    max-width: 400px;
-    margin: 1em 0 2em; }
-  .about-page-top .about-page-right {
-    align-items: center;
-    align-content: center;
-    margin: auto auto; }
-    .about-page-top .about-page-right .about-right-image {
-      max-width: 400px; }
-
-.Progress-bars {
-  display: flex; }
-  .Progress-bars .progress-content {
-    color: #fff;
-    width: 300px;
-    margin-top: 2em; }
-    .Progress-bars .progress-content .Progress-text {
-      text-align: center; }
-  .Progress-bars .progress-bar1 {
-    margin-right: 0 !important; }
-
-.about-full-screen {
-  width: 100%;
-  display: flex; }
-  .about-full-screen .about-screen-half {
-    width: 50%;
-    background: #eee; }
-    .about-full-screen .about-screen-half img {
-      margin: auto 0; }
-    .about-full-screen .about-screen-half:first-child {
-      padding-right: 1em; }
-    .about-full-screen .about-screen-half .about-page-content .about-page-text h4 {
-      color: #ee534f; }
-
-.course-content {
-  padding: 3em; }
-  .course-content .course-text {
-    text-align: center; }
-  .course-content .course-items {
+  grid-gap: 0px; }
+  .portfolio-grid .portfolio-grid1, .portfolio-grid .portfolio-grid3 {
+    display: grid;
+    grid-template-columns: 25% 1fr 30% 26%;
+    grid-template-rows: 300px; }
+  .portfolio-grid .portfolio-grid2 {
+    display: grid;
+    grid-template-columns: 25% 30% 1fr 26%;
+    grid-template-rows: 300px; }
+  .portfolio-grid .about-page-top {
+    display: flex;
+    margin: 0 10em; }
+    .portfolio-grid .about-page-top .about-page-text {
+      max-width: 400px;
+      margin: 1em 0 2em; }
+    .portfolio-grid .about-page-top .about-page-right {
+      align-items: center;
+      align-content: center;
+      margin: auto auto; }
+      .portfolio-grid .about-page-top .about-page-right .about-right-image {
+        max-width: 400px; }
+  .portfolio-grid .Progress-bars {
     display: flex; }
-    .course-content .course-items .course-item {
-      margin: 1em;
-      text-align: center;
-      border: 1px solid #e1918a;
-      padding: 6px;
-      background: #fff;
-      box-shadow: 5px 10px 8px #888888; }
+    .portfolio-grid .Progress-bars .progress-content {
+      color: #fff;
+      width: 300px;
+      margin-top: 2em; }
+      .portfolio-grid .Progress-bars .progress-content .Progress-text {
+        text-align: center; }
+    .portfolio-grid .Progress-bars .progress-bar1 {
+      margin-right: 0 !important; }
+  .portfolio-grid .about-full-screen {
+    width: 100%;
+    display: flex; }
+    .portfolio-grid .about-full-screen .about-screen-half {
+      width: 50%;
+      background: #eee; }
+      .portfolio-grid .about-full-screen .about-screen-half img {
+        margin: auto 0; }
+      .portfolio-grid .about-full-screen .about-screen-half:first-child {
+        padding-right: 1em; }
+      .portfolio-grid .about-full-screen .about-screen-half .about-page-content .about-page-text h4 {
+        color: #ee534f; }
+  .portfolio-grid .course-content {
+    padding: 3em; }
+    .portfolio-grid .course-content .course-text {
+      text-align: center; }
+    .portfolio-grid .course-content .course-items {
+      display: flex; }
+      .portfolio-grid .course-content .course-items .course-item {
+        margin: 1em;
+        text-align: center;
+        border: 1px solid #e1918a;
+        padding: 6px;
+        background: #fff;
+        box-shadow: 5px 10px 8px #888888; }
 
 @media (max-width: 649px) {
   .container {
