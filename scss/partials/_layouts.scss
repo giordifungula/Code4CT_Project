@@ -481,45 +481,29 @@ main {
     // margin: 0;
     //  grid-template-columns: 100px 100px; 
     // grid-template-rows: auto;
-    .portfolio-grid1, .portfolio-grid3 {
+    .portfolio-grid1, .portfolio-grid2 , .portfolio-grid3{
+        // grid-template-columns: auto auto !important;
         display: grid;
-        grid-template-columns: 25% 1fr 30% 26%;
-        // height: 422px;
-        grid-template-rows: 300px;
-    }
 
-    .portfolio-grid2 {
-        display: grid;
-        grid-template-columns: 25% 30% 1fr 26%;
-        grid-template-rows: 300px;
+        img {
+            transition:0.3s ease;
+            &:hover {
+                transform: scale(1.1);
+                
+            }
+        }
     }
     
-    .grid {
-        // background: $light-grey;
-        // // width: 318px;
-        // max-width: 100%;
-        // height: 200px;
-        // transition: 0.5s ease;
-        // transform: scale(10deg);
-        // margin: 0 -20px;
-    //     &:hover {
-    //         background: $dark-red !important;
-    //     }
-    //     &:nth-of-type(2n){
-    //         background: $text-color;
-    //         // === Every 2nd grid styled differently;
-    //         // width: 350px;
-    //         max-width: 100%;
-    //     }
-    //     &:nth-of-type(3n){
-    //         // width: 345px;
-    //     }
-    // }
-    // grid custom styles
-    .grid1, .grid2 , .grid3 {
-        // background: $dark-red;
-    }
-}
+} 
+.portfolio-btns {
+    margin: 1em auto;
+    text-align: center;
+
+        a {
+            border:1px solid $dark-red;
+            padding:0.2em 10px;
+        }
+}  
 
 // ================== About Page ===================//
 .about-page-top {
@@ -616,5 +600,4 @@ main {
             box-shadow: 5px 10px 8px #888888;
         }
     }
-}
 }

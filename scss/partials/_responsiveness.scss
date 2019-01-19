@@ -97,12 +97,18 @@
         flex-direction: column;
 
     }
+    // ===== Portfolio grid for Mobile ======//
+    .portfolio-grid1, .portfolio-grid2 , .portfolio-grid3{
+        grid-template-columns: auto !important;
+    }
     
 }
 
 //  ========================= Info Section ========================= //
-@media(max-width: 768px){
-   
+@media(min-width:768px) and(max-width: 770px) {
+    .portfolio-grid1, .portfolio-grid2 , .portfolio-grid3{
+        grid-template-columns: auto auto;
+    }
 // Info Default section under about section
     .info {
 
@@ -113,6 +119,19 @@
 // media queries
 @media(min-width:770px){
     // after the tablet view have this display
+    // ====== Portfolio Tablet view
+    .portfolio-grid1, .portfolio-grid3 {
+        display: grid;
+        grid-template-columns: 25% 1fr 30% 26%;
+        // height: 422px;
+        grid-template-rows: 300px;
+    }
+
+    .portfolio-grid2 {
+        display: grid;
+        grid-template-columns: 25% 30% 1fr 26%;
+        grid-template-rows: 300px;
+    }
         main {
             // margin: 0 6em;
             // padding: 0 6em;
