@@ -117,52 +117,52 @@
 
     <section class="portfolio-grid">
         <div class="portfolio-grid1">
-            <a href="">
+            <a href="/images/Code-Conversation-Code4CT-Women-In-Tech.jpg" class="port1" data-lightbox="portfolio1">
                 <img src="/images/Code-Conversation-Code4CT-Women-In-Tech.jpg" alt="Img">
             </a>
-            <a href="">
+            <a href="/images/portfolio_img4.jpg" data-lightbox="portfolio2" class="port2">
                 <img src="/images/portfolio_img4.jpg" alt="Img">
             </a>
-            <a href="">
+            <a href="/images/Code-Camp-2015-STEM-Girls-Pilot-Sakimkamva.jpg"data-lightbox="portfolio3" class="port3">
                 <img src="/images/Code-Camp-2015-STEM-Girls-Pilot-Sakimkamva.jpg" alt="Img">
             </a>
-            <a href="">
+            <a href="/images/Code-Coach-Code4CT.jpg" data-lightbox="portfolio1"class="port1">
                 <img src="/images/Code-Coach-Code4CT.jpg" alt="Img">
             </a>
         </div>
         <div class="portfolio-grid2">
-            <a href="">
+            <a href="/images/Host-Company-Semantica-Code4CT.jpg" data-lightbox="portfolio2" class="port2">
                 <img src="/images/Host-Company-Semantica-Code4CT.jpg" alt="Img">
             </a>
-            <a href="">
+            <a href="/images/Code4CT-Code-Week-2017-Bandwidth-Barn.jpg" data-lightbox="portfolio3" class="port2">
                 <img src="/images/Code4CT-Code-Week-2017-Bandwidth-Barn.jpg" alt="Img">
             </a>
-            <a href="">
+            <a href="/images/portfolio_img3.jpg" data-lightbox="portfolio1" class="port3">
                 <img src="/images/portfolio_img3.jpg" alt="Img">
             </a>
-            <a href="">
+            <a href="/images/CSG-International-Code4CT.jpg" data-lightbox="portfolio2">
                 <img src="/images/CSG-International-Code4CT.jpg" alt="Img">
             </a>
         </div>
         <div class="portfolio-grid3">
-            <a href="">
+            <a href="/images/Code-Camp-2015-STEM-Pilot-Girls-1.jpg"data-lightbox="portfolio3">
                 <img src="/images/Code-Camp-2015-STEM-Pilot-Girls-1.jpg" alt="Img">
             </a>
-            <a href="">
+            <a href="/images/portfolio_img1.jpg" data-lightbox="portfolio1">
                 <img src="/images/portfolio_img1.jpg" alt="Img">
             </a>
-            <a href="">
+            <a href="/images/Code-Camp-2015-Girls-STEM.jpg" data-lightbox="portfolio2">
                 <img src="/images/Code-Camp-2015-Girls-STEM.jpg" alt="Img">
             </a>
-            <a href="">
+            <a href="/images/portfolio_img2.jpg" data-lightbox="portfolio3">
                 <img src="/images/portfolio_img2.jpg" alt="Img">
             </a>
         </div>
     </section>
     <section class="portfolio-btns">
-        <a href="" class="portfolio-btn">1</a>
-        <a href="" class="portfolio-btn">2</a>
-        <a href="" class="portfolio-btn">3</a>
+        <a href="#" class="portfolio-btn" void:javascript()>1</a>
+        <a href="#" class="portfolio-btn" void:javascript()>2</a>
+        <a href="#" class="portfolio-btn" void:javascript()>3</a>
     </section>
     <div class="container lightFullWidth">
         <footer class="footer">
@@ -255,7 +255,41 @@
     <!-- <script src="js/main.js"></script> -->
 
     <script>
+    // Portfolio Filter Code
+    let portfolioBtn = document.querySelectorAll('.portfolio-btn');
+    let portfolioPictures = document.querySelectorAll('.portfolio-grid a img');
+    let localHost = 'http://127.0.0.1:5500';
+    let storedOtherImages = [localHost + '/images/portfolio_img1.jpg ', localHost + '/images/portfolio_img2.jpg', localHost + '/images/portfolio_img3.jpg ', localHost + '/images/portfolio_img4.jpg ', localHost + '/images/portfolio_img5.jpg', localHost + '/images/portfolio_img6.jpg',localHost + '/images/portfolio_img7.jpg', localHost + '/images/portfolio_img8.jpg ', localHost + '/images/portfolio_img9.jpg'];
     
+    console.log(storedOtherImages);
+    // let storeImages = [];
+    portfolioBtn.forEach(function(btn){
+        btn.addEventListener('click', function(e){
+            // console.log('Btn Clicked');
+            console.log(portfolioPictures);
+            for(let i = 0;i < portfolioPictures.length; i++){
+                debugger;
+                let currentImages = portfolioPictures[i].src;
+                let newCurrentImages = storedOtherImages[i];
+                currentImages = newCurrentImages;
+                // let  = storedOtherImages;
+                console.log('old pictures', currentImages);
+                console.log('new pictures', newCurrentImages);
+
+                // for(let j = 0; j < portfolioPictures.length;j++){
+
+                //     currentImages = storedOtherImages[j];
+                //     console.log(currentImages);
+                // }
+
+                console.log(currentImages);
+
+            }
+
+        });
+    });
+    
+    console.log(portfolioBtn);
     </script>
 </body>
 </html>

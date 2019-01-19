@@ -372,7 +372,7 @@ main {
         transform: scale(1.1); }
 
 .portfolio-btns {
-  margin: 1em auto;
+  margin: 1.2em auto;
   text-align: center; }
   .portfolio-btns a {
     border: 1px solid #ee534f;
