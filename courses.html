@@ -60,13 +60,38 @@
                 <p class="light-text">The Create with Code series is designed to give learners an introduction to the exciting world of coding, helping them to explore how creative coding can be. The package includes a testing day in which learners’ aptitude is assessed.</p>
                 <p class="light-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, ratione.</p>
             </div>
-            <div class="cart-content" id="cart"></div>
+            <article class="cart-content" id="cart">
+                <div class="cartItem">
+                    <div class="cartItemText">
+                        <p id="cartItemName" class=""></p>
+                        <span>R</span>
+                        <span id="cartItemPrice" class="cartItemPrice">0</span>
+                    </div>
+                    <div class="updateBtn">
+                        <a href="" id="cartItemRemove" class="cartItemRemove">
+                                <i class="fas fa-trash"></i>
+                        </a>
+                        <a href="" id="cartItemUpdate" class="cartItemUpdate">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="cartTotal">
+                    <span>Total</span>
+                    <p> R <strong id="cartTotalPrice">0</strong></p>
+                </div>
+                <!-- <h2>Cart Items will be here</h2> -->
+            </article>
         </section>
         <section class="container lightFullWidth">
             <section class="course-content">
                 <div class="course-text">
                     <h2>Introductory Coding Course</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, pariatur!</p>   
+                </div>
+                <div class="cartInfo" id="cartHeading">
+                    <span class="cartIcon"><i class="fas fa-shopping-cart"></i></span>
+                    <p><span id="itemCount">0</span>items - R <span class="itemCost" id="allTotalCost">0</span></p>
                 </div>
                 <section class="course-items">
                     <div class="course-item">

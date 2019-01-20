@@ -429,6 +429,43 @@ main {
       background: #fff;
       box-shadow: 5px 10px 8px #888888; }
 
+#cart {
+  position: fixed;
+  top: 66px;
+  right: 0;
+  transition: all 0.3s;
+  background: #ee534f;
+  width: 200px;
+  overflow-y: scroll;
+  background: #ee534f; }
+  #cart .cartItem, #cart .cartItemText {
+    display: flex;
+    align-content: center;
+    align-items: center; }
+
+.cartTotal {
+  display: flex;
+  align-items: center; }
+
+.displayCart {
+  display: none;
+  background: #3dfaaa !important; }
+
+#cartHeading {
+  display: flex;
+  background: #ee534f;
+  border: 1px solid #eee;
+  width: 250px;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.2s all; }
+  #cartHeading .cartIcon {
+    width: 20px;
+    margin: 1em; }
+  #cartHeading:hover {
+    background: #3f3f3f;
+    cursor: pointer; }
+
 @media (max-width: 649px) {
   .container {
     padding: 1em; }
