@@ -115,7 +115,7 @@
         </div>
     </section> -->
 
-    <section class="portfolio-grid">
+    <section class="portfolio-grid" id="portfolio-grid">
         <div class="portfolio-grid1">
             <a href="/images/Code-Conversation-Code4CT-Women-In-Tech.jpg" class="port1" data-lightbox="portfolio1">
                 <img src="/images/Code-Conversation-Code4CT-Women-In-Tech.jpg" alt="Img">
@@ -252,44 +252,163 @@
     <!-- <script src="jquery.counterup.min.js"></script> -->
 
     <script src="/js/lightbox.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-
     <script>
-    // Portfolio Filter Code
+        // Portfolio Filter Code
     let portfolioBtn = document.querySelectorAll('.portfolio-btn');
-    let portfolioPictures = document.querySelectorAll('.portfolio-grid a img');
-    let localHost = 'http://127.0.0.1:5500';
-    let storedOtherImages = [localHost + '/images/portfolio_img1.jpg ', localHost + '/images/portfolio_img2.jpg', localHost + '/images/portfolio_img3.jpg ', localHost + '/images/portfolio_img4.jpg ', localHost + '/images/portfolio_img5.jpg', localHost + '/images/portfolio_img6.jpg',localHost + '/images/portfolio_img7.jpg', localHost + '/images/portfolio_img8.jpg ', localHost + '/images/portfolio_img9.jpg'];
-    
-    console.log(storedOtherImages);
-    // let storeImages = [];
-    portfolioBtn.forEach(function(btn){
-        btn.addEventListener('click', function(e){
-            // console.log('Btn Clicked');
-            console.log(portfolioPictures);
-            for(let i = 0;i < portfolioPictures.length; i++){
-                debugger;
-                let currentImages = portfolioPictures[i].src;
-                let newCurrentImages = storedOtherImages[i];
-                currentImages = newCurrentImages;
-                // let  = storedOtherImages;
-                console.log('old pictures', currentImages);
-                console.log('new pictures', newCurrentImages);
+    let portfolioBtn1 = portfolioBtn[0];
 
-                // for(let j = 0; j < portfolioPictures.length;j++){
+        // Portfolio Btns collections
+    let portfolioBtn2 = portfolioBtn[1];
+    let portfolioBtn3 = portfolioBtn[2];
+    // console.log(portfolioBtn3);
 
-                //     currentImages = storedOtherImages[j];
-                //     console.log(currentImages);
-                // }
-
-                console.log(currentImages);
-
-            }
-
-        });
+    portfolioBtn1.addEventListener('click', function(e){
+        let portfolioImageContainer = document.getElementById('portfolio-grid');
+        portfolioImageContainer.innerHTML = 
+        ` <div class="portfolio-grid1">
+            <a href="/images/Code-Conversation-Code4CT-Women-In-Tech.jpg" class="port1" data-lightbox="portfolio1">
+                <img src="/images/Code-Conversation-Code4CT-Women-In-Tech.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img4.jpg" data-lightbox="portfolio2" class="port2">
+                <img src="/images/portfolio_img4.jpg" alt="Img">
+            </a>
+            <a href="/images/Code-Camp-2015-STEM-Girls-Pilot-Sakimkamva.jpg"data-lightbox="portfolio3" class="port3">
+                <img src="/images/Code-Camp-2015-STEM-Girls-Pilot-Sakimkamva.jpg" alt="Img">
+            </a>
+            <a href="/images/Code-Coach-Code4CT.jpg" data-lightbox="portfolio1"class="port1">
+                <img src="/images/Code-Coach-Code4CT.jpg" alt="Img">
+            </a>
+        </div>
+        <div class="portfolio-grid2">
+            <a href="/images/Host-Company-Semantica-Code4CT.jpg" data-lightbox="portfolio2" class="port2">
+                <img src="/images/Host-Company-Semantica-Code4CT.jpg" alt="Img">
+            </a>
+            <a href="/images/Code4CT-Code-Week-2017-Bandwidth-Barn.jpg" data-lightbox="portfolio3" class="port2">
+                <img src="/images/Code4CT-Code-Week-2017-Bandwidth-Barn.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img3.jpg" data-lightbox="portfolio1" class="port3">
+                <img src="/images/portfolio_img3.jpg" alt="Img">
+            </a>
+            <a href="/images/CSG-International-Code4CT.jpg" data-lightbox="portfolio2">
+                <img src="/images/CSG-International-Code4CT.jpg" alt="Img">
+            </a>
+        </div>
+        <div class="portfolio-grid3">
+            <a href="/images/Code-Camp-2015-STEM-Pilot-Girls-1.jpg"data-lightbox="portfolio3">
+                <img src="/images/Code-Camp-2015-STEM-Pilot-Girls-1.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img1.jpg" data-lightbox="portfolio1">
+                <img src="/images/portfolio_img1.jpg" alt="Img">
+            </a>
+            <a href="/images/Code-Camp-2015-Girls-STEM.jpg" data-lightbox="portfolio2">
+                <img src="/images/Code-Camp-2015-Girls-STEM.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img2.jpg" data-lightbox="portfolio3">
+                <img src="/images/portfolio_img2.jpg" alt="Img">
+            </a>
+              `
     });
-    
-    console.log(portfolioBtn);
+    portfolioBtn2.addEventListener('click',function(e){
+        alert('Btn2 clicked');
+        let portfolioImageContainer = document.getElementById('portfolio-grid');
+        portfolioImageContainer.innerHTML = 
+        `
+        <div class="portfolio-grid1">
+            <a href="/images/portfolio_img1.jpg" class="port1" data-lightbox="portfolio1">
+                <img src="/images/portfolio_img1.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img2.jpg" data-lightbox="portfolio2" class="port2">
+                <img src="/images/portfolio_img2.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img3.jpg"data-lightbox="portfolio3" class="port3">
+                <img src="/images/portfolio_img3.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img4.jpg" data-lightbox="portfolio1"class="port1">
+                <img src="/images/portfolio_img4.jpg" alt="Img">
+            </a>
+        </div>
+        <div class="portfolio-grid2">
+            <a href="/images/portfolio_img5.jpg" data-lightbox="portfolio2" class="port2">
+                <img src="/images/portfolio_img5.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img9.jpg" data-lightbox="portfolio3" class="port2">
+                <img src="/images/portfolio_img9.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img7.jpg" data-lightbox="portfolio1" class="port3">
+                <img src="/images/portfolio_img7.jpg" alt="Img">
+            </a>
+            <a href="/images/CSG-International-Code4CT.jpg" data-lightbox="portfolio2">
+                <img src="/images/CSG-International-Code4CT.jpg" alt="Img">
+            </a>
+        </div>
+        <div class="portfolio-grid3">
+            <a href="/images/portfolio_img8.jpg"data-lightbox="portfolio3">
+                <img src="/images/portfolio_img8.jpg" alt="Img">
+            </a>
+            <a href="/images/Code-Camp-2015-Girls-STEM.jpg " data-lightbox="portfolio1">
+                <img src="/images/Code-Camp-2015-Girls-STEM.jpg" alt="Img">
+            </a>
+            <a href="/images/Code-Camp-2015-STEM-Girls-Pilot-Sakimkamva.jpg" data-lightbox="portfolio2">
+                <img src="/images/Code-Camp-2015-STEM-Girls-Pilot-Sakimkamva.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img5.jpg" data-lightbox="portfolio3">
+                <img src="/images/portfolio_img5.jpg" alt="Img">
+            </a>
+        </div>
+        `;
+        console.log(portfolioImageContainer);
+    });
+    portfolioBtn3.addEventListener('click', function(e){
+        alert('Btn3 clicked');
+        let portfolioImageContainer = document.getElementById('portfolio-grid');
+        portfolioImageContainer.innerHTML = 
+        `
+        <div class="portfolio-grid1">
+            <a href="/images/portfolio_img10.jpg" class="port1" data-lightbox="portfolio1">
+                <img src="/images/portfolio_img10.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img11.jpg" data-lightbox="portfolio2" class="port2">
+                <img src="/images/portfolio_img11.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img12.jpg"data-lightbox="portfolio3" class="port3">
+                <img src="/images/portfolio_img12.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img13.jpg" data-lightbox="portfolio1"class="port1">
+                <img src="/images/portfolio_img13.jpg" alt="Img">
+            </a>
+        </div>
+        <div class="portfolio-grid2">
+            <a href="/images/portfolio_img14.jpg" data-lightbox="portfolio2" class="port2">
+                <img src="/images/portfolio_img14.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img15.jpg" data-lightbox="portfolio3" class="port2">
+                <img src="/images/portfolio_img15.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img16.jpg" data-lightbox="portfolio1" class="port3">
+                <img src="/images/portfolio_img16.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img17.jpg" data-lightbox="portfolio2">
+                <img src="/images/portfolio_img17.jpg" alt="Img">
+            </a>
+        </div>
+        <div class="portfolio-grid3">
+            <a href="/images/portfolio_img18.jpg"data-lightbox="portfolio3">
+                <img src="/images/portfolio_img18.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img19.jpg " data-lightbox="portfolio1">
+                <img src="/images/portfolio_img19.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img20.jpg" data-lightbox="portfolio2">
+                <img src="/images/portfolio_img20.jpg" alt="Img">
+            </a>
+            <a href="/images/portfolio_img21.jpg" data-lightbox="portfolio3">
+                <img src="/images/portfolio_img21.jpg" alt="Img">
+            </a>
+        </div>
+        `;
+    });
     </script>
+    
+
 </body>
 </html>

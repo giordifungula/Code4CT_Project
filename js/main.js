@@ -89,5 +89,6 @@ $(document).ready(function(){
             // percentage: false
             // text: "More power behind every pixel"
             }).circularProgress('animate', 80, 3000);
+            
 });
 

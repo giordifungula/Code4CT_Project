@@ -59,13 +59,12 @@ cartbtn.forEach(function(btn){
                         <a href="#" id="cartItemRemove" class="cartItemRemove">
                                 <i class="fas fa-trash">Remove</i>   
                         </a>
-                        <a href="" id="cartItemUpdate" class="cartItemUpdate">
-                            <i class="fas fa-plus"></i>
-                        </a>
+                        <input class="cartUpdate" type="number" value="1">
                     </div>
         `
         let updatedCart = document.getElementById('cart');
         let total = document.getElementById('cartTotalPrice');
+        console.log(total);
         cartContent.appendChild(cartItem, total);
         displayTotals();
         let deleteBtn = document.querySelectorAll('.cartItemRemove');
@@ -85,14 +84,17 @@ cartbtn.forEach(function(btn){
                     // updatePrice.textContent = '';
                     // Loop through all the Newly added content 
                     let total = 0;
+                    let updateOrder = document.getElementsByClassName('cartUpdate')[0];
+                    let updateOrderValue = updateOrder.value;
+                    console.log(updatePrice.textContent*updateOrder.value);
                     let itemRowPrice = itemRowPrices[i];
                     let priceTag = itemRowPrice.getElementsByClassName('cartItemPrice')[0].textContent[0];
-                    let priceNumber=parseInt(priceTag.innerHTML);
-                    if(itemRowPrice + itemRowPrice === updatePrice){
-                        console.log('Thery are the same')
-                    } else {
-                        updatePrice.textContent = itemRowPrice;
-                    }
+                    // let priceNumber=parseInt(priceTag.innerHTML);
+                    // if(itemRowPrice + itemRowPrice === updatePrice){
+                    //     console.log('Thery are the same')
+                    // } else {
+                    //     updatePrice.textContent = itemRowPrice;
+                    // }
                     // console.log(priceTag.innerHTML, 'first');
                     // console.log(updatePrice.innerHTML);
                     // let price = parseInt(priceTag.innerText = i);
@@ -124,7 +126,7 @@ cartbtn.forEach(function(btn){
             let totalPrices = [];
             let items = document.querySelectorAll('.cartItemPrice');
             // items.pop();
-            console.log(items);
+            console.log(items, 'Is the cartItemPrice');
             items.forEach(function(item){
                 // Makes sure its a Number and not string
                 if(item === 0){
@@ -137,11 +139,46 @@ cartbtn.forEach(function(btn){
                 totalPrices += item;
                 return totalPrices;
             });
-            console.log(finalMoney);
+            console.log(finalMoney, 'is the finalMoney');
             let total = document.getElementById('cartTotalPrice');
 
+
        total.textContent = finalMoney;
-       document.getElementById('cartItemPrice').textContent = totalPrices.length -1;
+
+       let updateOrder = document.getElementsByClassName('cartUpdate')[0];
+        updateOrder.addEventListener('change',function(e){
+            // Check to see if item is updated
+            let input = e.target;
+            
+            if(isNaN(input.value) || input.value <= 0){
+                input.value = 1;
+            }
+            let updateOrderValue = e.target.value;
+            total.textContent = finalMoney * updateOrderValue;
+            
+            console.log(e.target.value)
+
+            
+            // console.log(input);
+        });
+        console.log(updateOrder.value)
+       
+    //    Dynamic update on cart
+       let cartHeading = document.getElementsByClassName('cartInfo')[0];
+       let itemCount = document.getElementById('itemCount');
+       itemCount.textContent = totalPrices.length;
+        for(let i= 0;i<totalPrices.length;i++){
+            // add the total of array to check
+            let counter = 0,sum = 0;
+            totalPrices[i] += counter;
+            // if numbers are not the same make them the same
+            if(counter != itemCount.textContent){
+                counter = itemCount.textContent;
+            }
+
+        }
+    //    cartHeading.children //.document.getElementById('itemCount');
+        console.log(itemCount); //= totalPrices.length;
     
     }
         // l
