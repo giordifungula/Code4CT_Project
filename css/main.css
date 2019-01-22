@@ -79,15 +79,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 999;
   display: none;
   cursor: pointer;
-  -moz-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg);
   position: fixed;
   bottom: 50px;
   right: -98px;
-  color: #555;
+  color: #ee534f;
   text-align: center;
   font-size: 30px;
   text-decoration: none; }
@@ -337,6 +333,7 @@ main {
         margin: 0.5em; }
 
 .landing-top, .portfolio-content {
+  padding-top: 1em;
   height: 10em;
   background: #eee;
   display: flex;

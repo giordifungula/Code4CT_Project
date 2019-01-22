@@ -52,7 +52,7 @@ $(document).ready(function(){
             percent: 0, // percent starts from
             percentage: true
             // text: "More power behind every pixel"
-            }).circularProgress('animate', 80, 3000);
+            }).circularProgress('animate', 74, 3000);
         var progress_circle3 = $(".progress-bar3").circularProgress({
             // options here
             line_width: 6,
@@ -61,7 +61,7 @@ $(document).ready(function(){
             percent: 0, // percent starts from
             percentage: true
             // text: "More power behind every pixel"
-            }).circularProgress('animate', 80, 3000);
+            }).circularProgress('animate', 56, 3000);
         var progress_circle4 = $(".progress-bar4").circularProgress({
             // options here
             line_width: 6,
@@ -70,7 +70,7 @@ $(document).ready(function(){
             percent: 0, // percent starts from
             percentage: true
             // text: "More power behind every pixel"
-            }).circularProgress('animate', 80, 3000);
+            }).circularProgress('animate', 24, 3000);
         var progress_circle5 = $(".progress-bar5").circularProgress({
             // options here
             line_width: 6,
@@ -91,20 +91,20 @@ $(document).ready(function(){
             }).circularProgress('animate', 80, 3000);
 
             /*Scroll to top when arrow up clicked BEGIN*/
-    $(window).scroll(function() {
-        var height = $(window).scrollTop();
-        if (height > 100) {
-            $('#back2Top').fadeIn();
-        } else {
-            $('#back2Top').fadeOut();
-        }
-    });
-    $(document).ready(function() {
-        $("#back2Top").click(function(event) {
-            event.preventDefault();
-            $("html, body").animate({ scrollTop: 0 }, "slow");
-            return false;
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+            if (height > 100) {
+                $('#back2Top').fadeIn();
+            } else {
+                $('#back2Top').fadeOut();
+            }
         });
+        $(document).ready(function() {
+            $("#back2Top").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
 
 });
  /*Scroll to top when arrow up clicked END*/
