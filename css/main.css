@@ -139,8 +139,12 @@ h1, h2, h3, h4, h5, h6 {
       color: #3f3f3f; }
 
 .header {
-  padding: 20px;
-  overflow: hidden; }
+  padding: 10px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  background: #f9f9f9;
+  z-index: 1000; }
   .header .top {
     margin: 0 auto; }
     .header .top a {
@@ -343,7 +347,8 @@ main {
   flex: 1 1 0; }
   .landing-top .heading-content, .portfolio-content .heading-content {
     flex: 1 1 0;
-    text-align: center; }
+    text-align: center;
+    padding-top: 1em; }
     .landing-top .heading-content nav a, .portfolio-content .heading-content nav a {
       transition: 0.5s; }
       .landing-top .heading-content nav a:hover, .portfolio-content .heading-content nav a:hover {
@@ -626,7 +631,10 @@ main {
   .about-full-screen {
     flex-direction: column; }
     .about-full-screen .about-screen-half {
-      width: 100%; } }
+      width: 100%; }
+
+  .course-items {
+    flex-direction: column; } }
 @media (min-width: 650px) {
   #menu-bar {
     display: none; }

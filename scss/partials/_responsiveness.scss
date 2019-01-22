@@ -48,8 +48,6 @@
 
     // Mobile Nav inside Header 
     #mobile-nav {
-
-
         display: none;
         text-align: center;
         transition: 1s all;
@@ -264,6 +262,11 @@
         }
     }
         
+
+    // ===== Courses Page ==== 
+    .course-items {
+        flex-direction: column;
+        }
     }
     
     // Tablet and Desktop view 

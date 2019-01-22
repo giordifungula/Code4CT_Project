@@ -1,13 +1,13 @@
 // Header Styles
 .header{
 
-    padding: 20px;
+    padding: 10px;
     // creates some breathing space on top nav
     overflow: hidden;
-    // position: fixed;
-    // width: 100%;
-    // background:#f9f9f9;
-    // z-index: 1000;
+    position: fixed;
+    width: 100%;
+    background:#f9f9f9;
+    z-index: 1000;
 
     // Top Navigation only
     .top {
@@ -395,6 +395,7 @@ main {
     .heading-content {
         flex: 1 1 0;
         text-align: center;
+        padding-top: 1em;
         
         nav {
             // Styling the Navigation items
