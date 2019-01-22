@@ -18,7 +18,12 @@
     border: none !important;
     // dark red color for button
 }
+button {
+    &:hover {
+        // padding-left:35px;
 
+    }
+}
 .btn {
         display: inline-block;
         color: $text-color;
@@ -36,9 +41,11 @@
         // background-color: rgba(0.2,0.5,0.6,0.6);
         
         &:hover {
-            // background: green;
+            // background: green !important;
+            
             // transform: 
-            border-right: translateX(10px);
+            // width: 200px;
+            margin-left: 30px;
             
             .arrow {
                 display: inline;

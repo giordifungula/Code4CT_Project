@@ -72,6 +72,29 @@ h1, h2, h3, h4, h5, h6 {
 .slick-current {
   opacity: 1; }
 
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 50px;
+  right: -98px;
+  color: #555;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none; }
+
+#back2Top:hover {
+  color: #000; }
+
 .red-btn {
   background-color: #ee534f !important;
   color: #fff !important;
@@ -87,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
   transition: 1s all; }
   .btn:hover {
-    border-right: translateX(10px); }
+    margin-left: 30px; }
     .btn:hover .arrow {
       display: inline;
       transform: translateX(10px); }
@@ -207,6 +230,9 @@ main {
     color: #ee534f;
     padding: 20px;
     margin: 0; }
+  .info p {
+    line-height: 1.2;
+    color: #fff; }
 
 .courses .courses_grid {
   align-self: center;

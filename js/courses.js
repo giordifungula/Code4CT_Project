@@ -83,9 +83,9 @@ cartbtn.forEach(function(btn){
                     let updatePrice = document.getElementById('cartTotalPrice');
                     // updatePrice.textContent = '';
                     // Loop through all the Newly added content 
-                    let total = 0;
+                    // let total = 0;
                     let updateOrder = document.getElementsByClassName('cartUpdate')[0];
-                    let updateOrderValue = updateOrder.value;
+                    // let updateOrderValue = updateOrder.value;
                     console.log(updatePrice.textContent*updateOrder.value);
                     let itemRowPrice = itemRowPrices[i];
                     let priceTag = itemRowPrice.getElementsByClassName('cartItemPrice')[0].textContent[0];
@@ -146,6 +146,8 @@ cartbtn.forEach(function(btn){
        total.textContent = finalMoney;
 
        let updateOrder = document.getElementsByClassName('cartUpdate')[0];
+       let cartItemToCheck = document.getElementsByClassName('cartItem');
+       for(let i=0;i<=cartItemToCheck.length;i++){
         updateOrder.addEventListener('change',function(e){
             // Check to see if item is updated
             let input = e.target;
@@ -161,6 +163,8 @@ cartbtn.forEach(function(btn){
             
             // console.log(input);
         });
+       }
+        
         console.log(updateOrder.value)
        
     //    Dynamic update on cart

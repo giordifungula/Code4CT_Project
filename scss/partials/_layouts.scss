@@ -156,6 +156,7 @@ main {
     padding:2em 5em;
     // margin: 0 !important;
     text-align: center;
+    
 
     i {
         font-size: 3em;
@@ -164,6 +165,11 @@ main {
         // spacing around the Icon
         margin: 0;
         // style the icon inside the header
+    }
+    p {
+        line-height: 1.2;
+        color: $white;
+        // height: 96px;
     }
 }
 
