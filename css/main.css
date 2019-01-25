@@ -335,7 +335,6 @@ main {
         margin: 0.5em; }
 
 .landing-top, .portfolio-content {
-  padding-top: 1em;
   height: 10em;
   background: #eee;
   display: flex;
@@ -343,6 +342,7 @@ main {
   align-content: center;
   text-align: center;
   color: #3f3f3f;
+  height: 320px;
   flex: 1 1 0; }
   .landing-top .heading-content, .portfolio-content .heading-content {
     flex: 1 1 0;
