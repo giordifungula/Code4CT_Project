@@ -151,7 +151,7 @@ cartbtn.forEach(function(btn){
         updateOrder.addEventListener('change',function(e){
             // Check to see if item is updated
             let input = e.target;
-            
+    
             if(isNaN(input.value) || input.value <= 0){
                 input.value = 1;
             }

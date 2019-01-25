@@ -57,6 +57,8 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 90vh;
+    position: relative;
+    top: 49px;
     
     background-blend-mode: multiply;
 
@@ -390,6 +392,7 @@ main {
     align-content: center;
     text-align: center;
     color: $text-color;
+    
 
 
     flex: 1 1 0; 
