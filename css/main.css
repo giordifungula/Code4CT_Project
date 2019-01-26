@@ -270,7 +270,7 @@ main {
 .counter-text {
   display: inline-flex; }
   .counter-text i {
-    margin-top: 1.1em; }
+    margin-top: 0.8em; }
 
 .subscribe {
   text-align: center;
