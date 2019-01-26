@@ -500,8 +500,11 @@ main {
     .portfolio-grid1, .portfolio-grid2 , .portfolio-grid3{
         // grid-template-columns: auto auto !important;
         display: grid;
+        overflow: hidden;
+
         img {
             transition:0.3s ease;
+
             &:hover {
                 transform: scale(1.1);
             }

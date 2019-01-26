@@ -33,7 +33,7 @@ $(document).ready(function(){
         slidesToScroll: 4
       });
 
-    // ==== Progress Bar ====
+    // ==== Progress Bar =====
     var progress_circle1 = $(".progress-bar1").circularProgress({
             // options here
             line_width: 6,
@@ -88,7 +88,7 @@ $(document).ready(function(){
             percent: 0 // percent starts from
             // percentage: false
             // text: "More power behind every pixel"
-            }).circularProgress('animate', 80, 3000);
+            }).circularProgress('animate', 10, 3000);
 
             /*Scroll to top when arrow up clicked BEGIN*/
         $(window).scroll(function() {

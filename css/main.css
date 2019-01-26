@@ -398,7 +398,8 @@ main {
   display: grid;
   grid-gap: 0px; }
   .portfolio-grid .portfolio-grid1, .portfolio-grid .portfolio-grid2, .portfolio-grid .portfolio-grid3 {
-    display: grid; }
+    display: grid;
+    overflow: hidden; }
     .portfolio-grid .portfolio-grid1 img, .portfolio-grid .portfolio-grid2 img, .portfolio-grid .portfolio-grid3 img {
       transition: 0.3s ease; }
       .portfolio-grid .portfolio-grid1 img:hover, .portfolio-grid .portfolio-grid2 img:hover, .portfolio-grid .portfolio-grid3 img:hover {

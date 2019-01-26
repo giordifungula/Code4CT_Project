@@ -151,12 +151,14 @@ cartbtn.forEach(function(btn){
         updateOrder.addEventListener('change',function(e){
             // Check to see if item is updated
             let input = e.target;
-    
             if(isNaN(input.value) || input.value <= 0){
                 input.value = 1;
             }
-            let updateOrderValue = e.target.value;
-            total.textContent = finalMoney * updateOrderValue;
+            let updateOrderValue = e.target.value;  // get the value of input that user will increase to 
+            total.textContent = finalMoney * updateOrderValue;  //Update total amount value to final Amount
+            // if() 
+            console.log('Number of Cart Items now is', cartContent);
+            // if()
             
             console.log(e.target.value)
 
