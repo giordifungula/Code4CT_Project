@@ -322,6 +322,7 @@ main {
     
     .footer-item {
         margin: 1.2em;
+        max-width: 492px;
     
     // Footer Icon added to base styles
 
@@ -336,7 +337,7 @@ main {
         
         ul {
             // list-style: bullets;
-            padding: 10px;
+            padding: 21px 10px;
             // overflow-x: visible;
             
             li {

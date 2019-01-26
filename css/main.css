@@ -309,13 +309,14 @@ main {
   margin: 0 auto;
   text-align: left; }
   .footer .footer-item {
-    margin: 1.2em; }
+    margin: 1.2em;
+    max-width: 492px; }
     .footer .footer-item:first-child {
       padding-top: 2em; }
     .footer .footer-item h2 {
       color: #3f3f3f; }
     .footer .footer-item ul {
-      padding: 10px; }
+      padding: 21px 10px; }
       .footer .footer-item ul li {
         padding: 0.3em; }
         .footer .footer-item ul li:hover {
