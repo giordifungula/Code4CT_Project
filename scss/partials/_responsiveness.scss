@@ -82,6 +82,17 @@
             }
         }
     }
+    // === Counter Up Section ===
+    .Counter {
+        flex-direction: column;
+
+        .counter-content {
+            text-align: center;
+            margin: 0 auto;
+            width: 4em !important;
+            // Centers the counter in mobile
+        }
+    }
     // infoSection under the about section
     .info {
         

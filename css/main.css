@@ -546,6 +546,13 @@ main {
       .landing-pg .landing-content h1 {
         font-size: 2em; }
 
+  .Counter {
+    flex-direction: column; }
+    .Counter .counter-content {
+      text-align: center;
+      margin: 0 auto;
+      width: 4em !important; }
+
   .contact-content {
     flex-direction: column; }
 
