@@ -637,7 +637,12 @@ main {
   .team .team-content {
     flex-direction: column; }
     .team .team-content .team-inner {
-      flex-direction: column; }
+      flex-direction: column;
+      width: 100%; }
+      .team .team-content .team-inner .team-picture {
+        margin: 0 !important; }
+      .team .team-content .team-inner .team-info .light-text {
+        width: 100% !important; }
 
   footer {
     flex-direction: column; }

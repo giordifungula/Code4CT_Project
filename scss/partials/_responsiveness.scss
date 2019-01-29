@@ -265,7 +265,21 @@
 
             .team-inner {
             flex-direction: column;
+            width: 100%;
+
+            .team-picture {
+                margin: 0!important;
+            }
+
+            .team-info {
+
                 
+                .light-text {
+                    width: 100% !important;
+
+                }
+                // Display full screen for Mobile
+            }
             }
         }
     }
