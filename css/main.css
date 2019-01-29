@@ -566,7 +566,19 @@ main {
     grid-template-columns: auto !important; } }
 @media (min-width: 768px) and (max-width: 770px) {
   .portfolio-grid1, .portfolio-grid2, .portfolio-grid3 {
-    grid-template-columns: auto auto; } }
+    grid-template-columns: auto auto; }
+
+  .courses_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+    align-self: center;
+    align-content: center;
+    text-align: center; }
+    .courses_grid .course_item3 {
+      width: 100% !important;
+      height: 100% !important; } }
 @media (min-width: 770px) {
   .portfolio-grid1, .portfolio-grid3 {
     display: grid;
