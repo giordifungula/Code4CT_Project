@@ -93,12 +93,19 @@
     // === About page ===
     .about-page-top {
         flex-direction: column;
-
     }
+    .Progress-bars {
+        flex-direction: column;
+    }
+    svg.radial-progress {
+        // width: 200px !important;
+    }
+
     // ===== Portfolio grid for Mobile ======//
     .portfolio-grid1, .portfolio-grid2 , .portfolio-grid3{
         grid-template-columns: auto !important;
     }
+    
     
 }
 
