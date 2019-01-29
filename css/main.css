@@ -430,7 +430,8 @@ main {
   .Progress-bars .progress-content {
     color: #fff;
     width: 300px;
-    margin-top: 2em; }
+    margin-top: 2em;
+    text-align: center; }
     .Progress-bars .progress-content .Progress-text {
       text-align: center; }
   .Progress-bars .progress-bar1 {

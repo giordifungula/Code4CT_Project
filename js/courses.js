@@ -126,7 +126,7 @@ cartbtn.forEach(function(btn){
             let totalPrices = [];
             let items = document.querySelectorAll('.cartItemPrice');
             // items.pop();
-            console.log(items, 'Is the cartItemPrice');
+            console.log(items, 'Is the cartItemPrice Storage');
             items.forEach(function(item){
                 // Makes sure its a Number and not string
                 if(item === 0){
@@ -138,16 +138,22 @@ cartbtn.forEach(function(btn){
             let finalMoney = totalPrices.reduce(function(totalPrices, item){
                 totalPrices += item;
                 return totalPrices;
+                // Updates the total Price and returns the answer
             });
             console.log(finalMoney, 'is the finalMoney');
+            // Locate the first cartTotal Price
             let total = document.getElementById('cartTotalPrice');
-
-
+            // Locate the second cartTotal Price
+            let totalSecond = document.getElementById('allTotalCost').textContent;
+            
+            // Make the ID Total's display to the actual amount
        total.textContent = finalMoney;
+       totalSecond = finalMoney;
 
        let updateOrder = document.getElementsByClassName('cartUpdate')[0];
        let cartItemToCheck = document.getElementsByClassName('cartItem');
-       for(let i=0;i<=cartItemToCheck.length;i++){
+       console.log(cartItemToCheck);
+       for(let i=0;i <= cartItemToCheck.length;i++){
         updateOrder.addEventListener('change',function(e){
             // Check to see if item is updated
             let input = e.target;
@@ -156,17 +162,21 @@ cartbtn.forEach(function(btn){
             }
             let updateOrderValue = e.target.value;  // get the value of input that user will increase to 
             total.textContent = finalMoney * updateOrderValue;  //Update total amount value to final Amount
-            // if() 
+            if(cartItemToCheck.length > 1){
+                // alert('More Items added');
+                let cartItemprice = cartItemToCheck[i];
+                console.log(cartItemprice);
+                console.log('The Items are', cartItemToCheck[i])
+
+            } 
             console.log('Number of Cart Items now is', cartContent);
             // if()
-            
             console.log(e.target.value)
 
             
             // console.log(input);
         });
        }
-        
         console.log(updateOrder.value)
        
     //    Dynamic update on cart
@@ -186,6 +196,9 @@ cartbtn.forEach(function(btn){
     //    cartHeading.children //.document.getElementById('itemCount');
         console.log(itemCount); //= totalPrices.length;
     
+    }
+    function updateTotalPrices(){
+        // let 
     }
         // l
 
