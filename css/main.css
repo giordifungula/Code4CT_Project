@@ -638,7 +638,8 @@ main {
     flex-direction: column; }
     .team .team-content .team-inner {
       flex-direction: column;
-      width: 100%; }
+      width: 100%;
+      margin: 0 !important; }
       .team .team-content .team-inner .team-picture {
         margin: 0 !important; }
       .team .team-content .team-inner .team-info .light-text {
