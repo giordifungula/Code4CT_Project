@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
       color: #3f3f3f; }
 
 .header {
-  padding: 10px;
+  padding: 11px;
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -265,6 +265,9 @@ main {
 .Counter, .slider {
   padding: 2em;
   color: #fff; }
+
+.slider-content {
+  overflow-x: hidden; }
 
 .counter-text {
   display: inline-flex; }
@@ -407,7 +410,7 @@ main {
 .portfolio-btns {
   margin: 1.2em auto;
   text-align: center; }
-  .portfolio-btns a {
+  .portfolio-btns span {
     border: 1px solid #ee534f;
     padding: 0.2em 10px; }
 
@@ -555,6 +558,10 @@ main {
 
   .contact-content {
     flex-direction: column; }
+    .contact-content input {
+      margin: 1em; }
+    .contact-content form textarea {
+      width: 100%; }
 
   .about-page-top {
     flex-direction: column; }

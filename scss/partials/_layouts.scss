@@ -1,7 +1,7 @@
 // Header Styles
 .header{
 
-    padding: 10px;
+    padding: 11px;
     // creates some breathing space on top nav
     overflow: hidden;
     position: fixed;
@@ -243,6 +243,9 @@ main {
 .Counter, .slider,  {
     padding: 2em;
     color: $white;
+}
+.slider-content {
+    overflow-x: hidden;
 }
 // ====== Counter content ====== //
 .counter-text {
@@ -516,7 +519,7 @@ main {
     margin: 1.2em auto;
     text-align: center;
 
-        a {
+        span{
             border:1px solid $dark-red;
             padding:0.2em 10px;
         }

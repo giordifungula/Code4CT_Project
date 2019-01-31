@@ -16,7 +16,6 @@ $(document).ready(function(){
         // $('#mobile-nav').style.height = '100px';
     });
     
-
     // ==== Slider ====
     $(".center").slick({
         variableWidth: true,

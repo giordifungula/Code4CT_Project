@@ -100,6 +100,16 @@
     // ==== Contact page ====
     .contact-content {
         flex-direction: column;
+
+        input {
+            margin: 1em
+        }
+        form textarea {
+            width: 100%;
+
+        }
+    }
+    textarea {
     }
     // === About page ===
     .about-page-top {
