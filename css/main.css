@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .landing-pg {
-  background: url("/images/Code4CT-homepage.jpg");
+  background: url("../../images/Code4CT-homepage.jpg");
   background-color: #3f3f3f;
   background-size: cover;
   background-position: center;
