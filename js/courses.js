@@ -59,18 +59,65 @@ cartbtn.forEach(function(btn){
                         <a href="#" id="cartItemRemove" class="cartItemRemove">
                                 <i class="fas fa-trash">Remove</i>   
                         </a>
-                        <input class="cartUpdate" type="number" value="1">
+                        // <input class="cartUpdate" type="number" value="1">
                     </div>
         `
         let updatedCart = document.getElementById('cart');
         let total = document.getElementById('cartTotalPrice');
         console.log(total);
+        alert('the total value is ');
+        console.log(total);
+        // Total is grabbing element only is adding the new item to cart 
         cartContent.appendChild(cartItem, total);
+        // Stores the newly addedItem to the cart Content
+        let dynamicCartContent = document.getElementById('cart');
+                // Store the cartItems inside the cart Contents
+        let newCartItem = dynamicCartContent.querySelectorAll('.cartItem');
+        
+        // Loop through the array and check if something is removed
+        for(let i = 0;i < newCartItem.length;i++){
+            let cartItemsTotal = newCartItem.length;
+            if(cartItemsTotal != newCartItem.length){
+                alert('The length has been changed');
+            }
+        }
+               
+        console.log('Stored Item Carts', newCartItem);
         displayTotals();
         let deleteBtn = document.querySelectorAll('.cartItemRemove');
         deleteBtn.forEach(function(btn){
             btn.addEventListener('click',function(e){
+                // The dynamically added cart 
+                //  Going to add this to the create button 
+                let dynamicCartContent = document.getElementById('cart');
+                // // Store the cartItems inside the cart Contents
+                let newCartItem = dynamicCartContent.querySelectorAll('.cartItem');
+
+                // Loop through the Items
+                
+
+               
+                // console.log('Stored Item Carts', newCartItem);
                 let removeItem = e.target.parentElement.parentElement.parentElement.remove();
+
+                if(newCartItem){
+                    newCartItem.querySelectorAll('cartItemPrice');
+                    console.log('The Left over things are', newCartItem);
+                // Update the removed Items
+                let total = document.getElementById('cartTotalPrice');
+                // Locate the second cartTotal Price
+                let totalSecond = document.getElementById('allTotalCost');
+                
+                // Make the ID Total's display to the actual amount
+                // total.textContent = ;
+                // Store the second Total content and display    
+                totalSecond.textContent = finalMone;
+                }
+
+                console.log('Something removed total left is  ', newCartItem);
+                
+                let updatePrices = document.getElementById('cartTotalPrice');
+
                 alert('Your Cart is cleared','Please add another Item !');
                 // document.getElementById('cartTotalPrice').innerHTML = 0;
 
@@ -79,27 +126,27 @@ cartbtn.forEach(function(btn){
                 let itemRowPrices = itemRow.getElementsByClassName('cartItemPrice')[0];
                 // Capture the Prices Container
 
-                for(let i =0;i<itemRowPrices.length;i++){
-                    let updatePrice = document.getElementById('cartTotalPrice');
-                    // updatePrice.textContent = '';
-                    // Loop through all the Newly added content 
-                    // let total = 0;
-                    let updateOrder = document.getElementsByClassName('cartUpdate')[0];
-                    // let updateOrderValue = updateOrder.value;
-                    console.log(updatePrice.textContent*updateOrder.value);
-                    let itemRowPrice = itemRowPrices[i];
-                    let priceTag = itemRowPrice.getElementsByClassName('cartItemPrice')[0].textContent[0];
-                    // let priceNumber=parseInt(priceTag.innerHTML);
-                    // if(itemRowPrice + itemRowPrice === updatePrice){
-                    //     console.log('Thery are the same')
-                    // } else {
-                    //     updatePrice.textContent = itemRowPrice;
-                    // }
-                    // console.log(priceTag.innerHTML, 'first');
-                    // console.log(updatePrice.innerHTML);
-                    // let price = parseInt(priceTag.innerText = i);
+                // for(let i =0;i<itemRowPrices.length;i++){
+                //     let updatePrice = document.getElementById('cartTotalPrice');
+                //     // updatePrice.textContent = '';
+                //     // Loop through all the Newly added content 
+                //     // let total = 0;
+                //     let updateOrder = document.getElementsByClassName('cartUpdate')[0];
+                //     // let updateOrderValue = updateOrder.value;
+                //     console.log(updatePrice.textContent*updateOrder.value);
+                //     let itemRowPrice = itemRowPrices[i];
+                //     let priceTag = itemRowPrice.getElementsByClassName('cartItemPrice')[0].textContent[0];
+                //     // let priceNumber=parseInt(priceTag.innerHTML);
+                //     // if(itemRowPrice + itemRowPrice === updatePrice){
+                //     //     console.log('Thery are the same')
+                //     // } else {
+                //     //     updatePrice.textContent = itemRowPrice;
+                //     // }
+                //     // console.log(priceTag.innerHTML, 'first');
+                //     // console.log(updatePrice.innerHTML);
+                //     // let price = parseInt(priceTag.innerText = i);
 
-                }
+                // }
                 console.log(itemRow);
                 console.log(itemRowPrices);
 
@@ -144,38 +191,41 @@ cartbtn.forEach(function(btn){
             // Locate the first cartTotal Price
             let total = document.getElementById('cartTotalPrice');
             // Locate the second cartTotal Price
-            let totalSecond = document.getElementById('allTotalCost').textContent;
+            let totalSecond = document.getElementById('allTotalCost');
             
             // Make the ID Total's display to the actual amount
        total.textContent = finalMoney;
-       totalSecond = finalMoney;
+            // Store the second Total content and display    
+       totalSecond.textContent = finalMoney;
 
-       let updateOrder = document.getElementsByClassName('cartUpdate')[0];
+    //    Grabs the first UpdateCart Content
+       let updateOrder = document.querySelectorAll('.cartUpdate');
+            console.log('The first update content is ', updateOrder);
        let cartItemToCheck = document.getElementsByClassName('cartItem');
-       console.log(cartItemToCheck);
+       console.log('The amount of cart items to check will be ',cartItemToCheck);
        for(let i=0;i <= cartItemToCheck.length;i++){
-        updateOrder.addEventListener('change',function(e){
-            // Check to see if item is updated
-            let input = e.target;
-            if(isNaN(input.value) || input.value <= 0){
-                input.value = 1;
-            }
-            let updateOrderValue = e.target.value;  // get the value of input that user will increase to 
-            total.textContent = finalMoney * updateOrderValue;  //Update total amount value to final Amount
-            if(cartItemToCheck.length > 1){
-                // alert('More Items added');
-                let cartItemprice = cartItemToCheck[i];
-                console.log(cartItemprice);
-                console.log('The Items are', cartItemToCheck[i])
+        // updateOrder.addEventListener('change',function(e){
+        //     // Check to see if item is updated
+        //     let input = e.target;
+        //     if(isNaN(input.value) || input.value <= 0){
+        //         input.value = 1;
+        //     }
+        //     let updateOrderValue = e.target.value;  // get the value of input that user will increase to 
+        //     total.textContent = finalMoney * updateOrderValue;  //Update total amount value to final Amount
+        //     if(cartItemToCheck.length > 1){
+        //         // alert('More Items added');
+        //         let cartItemprice = cartItemToCheck[i];
+        //         console.log(cartItemprice);
+        //         console.log('The Items are', cartItemToCheck[i])
 
-            } 
-            console.log('Number of Cart Items now is', cartContent);
-            // if()
-            console.log(e.target.value)
+        //     } 
+        //     console.log('Number of Cart Items now is', cartContent);
+        //     // if()
+        //     console.log(e.target.value)
 
             
-            // console.log(input);
-        });
+        //     // console.log(input);
+        // });
        }
         console.log(updateOrder.value)
        
