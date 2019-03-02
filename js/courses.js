@@ -59,7 +59,6 @@ cartbtn.forEach(function(btn){
                         <a href="#" id="cartItemRemove" class="cartItemRemove">
                                 <i class="fas fa-trash">Remove</i>   
                         </a>
-                        // <input class="cartUpdate" type="number" value="1">
                     </div>
         `
         let updatedCart = document.getElementById('cart');
