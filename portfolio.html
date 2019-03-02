@@ -250,16 +250,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="js/jquery-2.1.4.js"></script>
     
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
-    <!-- <script src="jquery.counterup.min.js"></script> -->
-    
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <!-- === Removed the main js Code and non needed code ==== -->
     <script src="js/slick.js"></script>
 
-    <script src="/js/lightbox.js"></script>
-    <!-- <script src="js/plugin.js"></script> -->
-
+    <script src="js/lightbox.js"></script>
     <script>
+        // ==== Slider First Load====
+    $(".center").slick({
+        variableWidth: true,
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        slidesToShow: 10,
+        slidesToScroll: 4
+      });
+
+
         // Portfolio Filter Code
     let portfolioBtn = document.querySelectorAll('.portfolio-btn');
     let portfolioBtn1 = portfolioBtn[0];

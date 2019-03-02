@@ -46,14 +46,15 @@ $(document).ready(function(){
                 return false;
             });
 
-});
- /*Scroll to top when arrow up clicked END*/
+            /*Scroll to top when arrow up clicked END*/
             
         // ===== CounterUp ===== ;
         $('.counter').counterUp({
             delay: 10,
             time: 1000
         });
+});
+ 
 });
 
 
