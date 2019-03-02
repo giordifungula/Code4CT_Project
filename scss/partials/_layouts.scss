@@ -240,12 +240,13 @@ main {
 
 
 // ===== Slider and Subscribe section ===== //
-.Counter, .slider,  {
+.Counter, .slider {
     padding: 2em;
     color: $white;
 }
 .slider-content {
     overflow-x: hidden;
+    overflow: hidden;
 }
 // ====== Counter content ====== //
 .counter-text {

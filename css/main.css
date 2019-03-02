@@ -331,6 +331,7 @@ main {
 
 .slider-content {
   overflow-x: hidden;
+  overflow: hidden;
 }
 
 .counter-text {
