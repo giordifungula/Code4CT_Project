@@ -527,10 +527,13 @@ main {
 }  
 
 // ================== About Page ===================//
+.about-page-content {
+    padding: 20px;
+    // some spacing around text
+}
 .about-page-top {
     display: flex;
     // margin: 3em 10em;
-    margin: 0 10em;
     
     .title {
         // width:

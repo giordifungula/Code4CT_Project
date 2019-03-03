@@ -522,9 +522,12 @@ main {
   padding: 0.2em 10px;
 }
 
+.about-page-content {
+  padding: 20px;
+}
+
 .about-page-top {
   display: flex;
-  margin: 0 10em;
 }
 .about-page-top .about-page-text {
   max-width: 450px;
@@ -715,6 +718,7 @@ main {
 
   .about-page-top {
     flex-direction: column;
+    margin: 5px !important;
   }
 
   .Progress-bars {
@@ -742,6 +746,9 @@ main {
   .courses_grid .course_item3 {
     width: 100% !important;
     height: 100% !important;
+  }
+  .courses_grid .about-page-top {
+    margin: 0 10em;
   }
 }
 @media (min-width: 770px) {

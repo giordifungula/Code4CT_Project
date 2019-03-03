@@ -114,6 +114,7 @@
     // === About page ===
     .about-page-top {
         flex-direction: column;
+        margin: 5px !important;
     }
     .Progress-bars {
         flex-direction: column;
@@ -161,6 +162,9 @@
             width: 100% !important;
             // displays full content
             height: 100% !important;
+        }
+        .about-page-top{
+            margin: 0 10em;
         }
 
     }
