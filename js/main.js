@@ -15,22 +15,7 @@ $(document).ready(function(){
         console.log($('#mobile-nav').toggleClass('open'));
         // $('#mobile-nav').style.height = '100px';
     });
-    
-    // ==== Slider ====
-    $(".center").slick({
-        variableWidth: true,
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        centerMode: true,
-        slidesToShow: 10,
-        slidesToScroll: 4
-      });
-
-    
-
-            /*Scroll to top when arrow up clicked BEGIN*/
+        /*Scroll to top when arrow up clicked BEGIN*/
         $(window).scroll(function() {
             var height = $(window).scrollTop();
             if (height > 100) {
@@ -47,7 +32,25 @@ $(document).ready(function(){
             });
 
             /*Scroll to top when arrow up clicked END*/
+
+            // == Loads the most important and consistent content first == //
             
+    
+    // ==== Slider ====
+    $(".center").slick({
+        variableWidth: true,
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        slidesToShow: 10,
+        slidesToScroll: 4
+      });
+
+    
+
+        
         // ===== CounterUp ===== ;
         $('.counter').counterUp({
             delay: 10,
