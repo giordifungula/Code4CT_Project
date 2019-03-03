@@ -27,7 +27,7 @@ $(document).ready(function(){
         $(document).ready(function() {
             $("#back2Top").click(function(event) {
                 event.preventDefault();
-                $("html, body").animate({ scrollTop: 10 }, "slow");
+                $("html, body").animate({ scrollTop: 0 }, "slow");
                 // $("html").
                 return false;
             });
